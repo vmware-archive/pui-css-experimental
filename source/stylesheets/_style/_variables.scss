@@ -1,0 +1,126 @@
+
+
+//Spacing Base
+//---------------------------------------------
+$spacing-small:2px;
+$spacing-base:8px;
+//Material Colors Source
+//---------------------------------------------
+//Grey
+$mdl-color-grey-50:rgb(250, 250, 250);
+$mdl-color-grey-100:rgb(245, 245, 245);
+$mdl-color-grey-200:rgb(238, 238, 238);
+$mdl-color-grey-300:rgb(224, 224, 224);
+$mdl-color-grey-400:rgb(189, 189, 189);
+$mdl-color-grey-500:rgb(158, 158, 158);
+$mdl-color-grey-600:rgb(117, 117, 117);
+$mdl-color-grey-700:rgb(97, 97, 97);
+$mdl-color-grey-800:rgb(66, 66, 66);
+$mdl-color-grey-900:rgb(33, 33, 33);
+//Blue-Grey
+$mdl-color-blue-grey-50:rgb(236, 239, 241);
+$mdl-color-blue-grey-100:rgb(207, 216, 220);
+$mdl-color-blue-grey-200:rgb(176, 190, 197);
+$mdl-color-blue-grey-300:rgb(144, 164, 174);
+$mdl-color-blue-grey-400:rgb(120, 144, 156);
+$mdl-color-blue-grey-500:rgb(96, 125, 139);
+$mdl-color-blue-grey-600:rgb(84, 110, 122);
+$mdl-color-blue-grey-700:rgb(69, 90, 100);
+$mdl-color-blue-grey-800:rgb(55, 71, 79);
+$mdl-color-blue-grey-900:rgb(38, 50, 56);
+//Blue
+$mdl-color-blue-400:rgb(66, 165, 245);
+$mdl-color-blue-500:rgb(33, 150, 243);
+$mdl-color-blue-600:rgb(30, 136, 229);
+$mdl-color-blue-700:rgb(25, 118, 210);
+$mdl-color-blue-800:rgb(21, 101, 192);
+$mdl-color-blue-900:rgb(13, 71, 161);
+//Green
+$mdl-color-green-400:rgb(102, 187, 106);
+$mdl-color-green-500:rgb(76, 175, 80);
+$mdl-color-green-600:rgb(67, 160, 71);
+$mdl-color-green-700:rgb(56, 142, 60);
+$mdl-color-green-800:rgb(46, 125, 50);
+$mdl-color-green-900:rgb(27, 94, 32);
+//Red
+$mdl-color-red-400:rgb(239, 83, 80);
+$mdl-color-red-500:rgb(244, 67, 54);
+$mdl-color-red-600:rgb(229, 57, 53);
+$mdl-color-red-700:rgb(211, 47, 47);
+$mdl-color-red-800:rgb(198, 40, 40);
+$mdl-color-red-900:rgb(183, 28, 28);
+//Colors
+//---------------------------------------------
+$grey-50:$mdl-color-grey-50;
+$grey-100:$mdl-color-grey-100;
+$grey-200:$mdl-color-grey-200;
+$grey-300:$mdl-color-grey-300;
+$grey-400:$mdl-color-grey-400;
+$grey-500:$mdl-color-grey-500;
+$grey-600:$mdl-color-grey-600;
+$grey-700:$mdl-color-grey-700;
+$grey-800:$mdl-color-grey-800;
+$grey-900:$mdl-color-grey-900;
+$blue-grey-50:$mdl-color-blue-grey-50;
+$blue-grey-100:$mdl-color-blue-grey-100;
+$blue-grey-200:$mdl-color-blue-grey-200;
+$blue-grey-300:$mdl-color-blue-grey-300;
+$blue-grey-400:$mdl-color-blue-grey-400;
+$blue-grey-500:$mdl-color-blue-grey-500;
+$blue-grey-600:$mdl-color-blue-grey-600;
+$blue-grey-700:$mdl-color-blue-grey-700;
+$blue-grey-800:$mdl-color-blue-grey-800;
+$blue-grey-900:$mdl-color-blue-grey-900;
+$blue-400:$mdl-color-blue-400;
+$blue-500:$mdl-color-blue-500;
+$blue-600:$mdl-color-blue-600;
+$blue-700:$mdl-color-blue-700;
+$blue-800:$mdl-color-blue-800;
+$blue-900:$mdl-color-blue-900;
+//Forms
+//---------------------------------------------
+$input-border:$blue-grey-100;
+$input-border-focus:$blue-grey-600;
+$input-disabled:$blue-grey-50;
+$input-border-invalid:$mdl-color-red-500;
+$input-invalid-text:$mdl-color-red-500;
+$input-border-valid:$mdl-color-green-500;
+//Buttons
+//---------------------------------------------
+//default
+$btn-default-color:$blue-grey-500;
+$btn-default-color-hover:$blue-grey-700;
+$btn-default-color-focus:$blue-grey-600;
+//hightlight
+$btn-highlight-color:$mdl-color-blue-500;
+$btn-highlight-color-hover:$mdl-color-blue-700;
+$btn-highlight-color-focus:$mdl-color-blue-600;
+//positive
+$btn-positive-color:$mdl-color-green-500;
+$btn-positive-color-hover:$mdl-color-green-700;
+$btn-positive-color-focus:$mdl-color-green-600;
+//negative
+$btn-negative-color:$mdl-color-red-500;
+$btn-negative-color-hover:$mdl-color-red-700;
+$btn-negative-color-focus:$mdl-color-red-600;
+//Button Radius
+$btn-radius:2px;
+//Loading Spinner
+$loading-spinner:$mdl-color-blue-600;
+$svg-size: 100px;
+$offset: 430;
+$duration: 2s;
+//Tables
+$table-border-color:$blue-grey-50;
+
+// $table-border-color:rgba(0, 0, 0, .16);
+//Box Shadows
+//---------------------------------------------
+//Shadow - key light
+$box-shadow-key-1: 0px 2px 2px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-key-2: 0px 4px 4px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-key-3: 0px 8px 8px 0px rgba(36, 54, 65, 0.1);
+//Shadow - ambient light
+$box-shadow-amb-1: 0px 0px 2px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-amb-2: 0px 0px 4px 1px rgba(36, 54, 65, 0.1);
+$box-shadow-amb-3: 0px 0px 8px 1px rgba(36, 54, 65, 0.1);

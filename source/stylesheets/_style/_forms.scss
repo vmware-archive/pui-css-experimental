@@ -1,0 +1,271 @@
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    height: ($spacing-base*4);
+    padding: 4px $spacing-base;
+    /* The 6px vertically centers text on FF, ignored by Webkit */
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid $input-border;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $blue-grey-900;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid $input-border-focus;
+    outline: 0;
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+    margin-right: 2px;
+}
+
+label,
+legend {
+    color: $blue-grey-600;
+}
+
+//Form Groupings
+//-------------------------------------
+.form-group {
+    margin-bottom: $spacing-base;
+    margin-right: $spacing-base;
+    position: relative;
+    label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: ($spacing-base*4);
+        margin-bottom: 0;
+        margin-right: $spacing-base;
+    }
+    input,
+    textarea,
+    select {
+        &.disabled {
+            background-color: $input-disabled;
+            cursor: default;
+            pointer-events: none;
+            color: $blue-grey-700;
+            border-color: $blue-grey-100;
+        }
+    }
+    //Validation Icons
+    .svgicon {
+        position: absolute;
+        right: $spacing-base;
+        top: $spacing-base;
+        font-size: 16px;
+        &.valid svg {
+            fill: $input-border-valid;
+        }
+        &.invalid svg {
+            fill: $input-border-invalid;
+        }
+    }
+}
+
+.form-group-search {
+    position: relative;
+    .svgicon {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        fill: $blue-grey-600;
+    }
+    input {
+        padding-left: 32px;
+    }
+}
+
+.form-lg {
+    label {
+        font-size: 16px;
+    }
+    input {
+        height: ($spacing-base*5);
+        font-size: 16px;
+    }
+}
+
+.form-inline.form-lg {
+    label {
+        line-height: ($spacing-base*5);
+    }
+}
+
+.form-inline {
+    // display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    label {
+        // display: inline-flex;
+        margin-bottom: 0;
+        line-height: ($spacing-base*4);
+    }
+    button,
+    .button {
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+    input,
+    textarea,
+    select {
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+}
+
+//Accept & Error (valid/invalid)
+input[type="email"].invalid,
+input[type="number"].invalid,
+input[type="search"].invalid,
+input[type="text"].invalid,
+input[type="tel"].invalid,
+input[type="url"].invalid,
+input[type="password"].invalid,
+textarea.invalid {
+    border: 1px solid $input-border-invalid;
+}
+
+input[type="email"].valid,
+input[type="number"].valid,
+input[type="search"].valid,
+input[type="text"].valid,
+input[type="tel"].valid,
+input[type="url"].valid,
+input[type="password"].valid,
+textarea.valid {
+    border: 1px solid $input-border-valid;
+}
+
+.invalid-text {
+    font-size: 12px;
+    color: $input-invalid-text;
+}
+
+.form-group {
+    //Validation Icons
+    .svgicon {
+        &.valid,
+        &.invalid {
+            position: absolute;
+            right: $spacing-base;
+            top: $spacing-base;
+            font-size: 16px;
+        }
+        &.valid svg {
+            fill: $input-border-valid;
+        }
+        &.invalid svg {
+            fill: $input-border-invalid;
+        }
+    }
+}
+
+.simple-form {
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select {
+        // display: block;
+        // height: ($spacing-base*4);
+        padding: 4px 0;
+
+        font-size: 14px;
+        background-color: transparent;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: 1px solid $input-border;
+        border-radius: 0px;
+        // box-shadow: none;
+        // box-sizing: border-box;
+        // color: $blue-grey-900;
+    }
+
+
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    textarea:focus,
+    select:focus {
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: 1px solid $input-border-focus;
+        // outline: 0;
+    }
+    input,
+    textarea,
+    select {
+        &.disabled {
+            //background-color: $input-disabled;
+            cursor: default;
+            pointer-events: none;
+            color: $blue-grey-500;
+            border-color: $blue-grey-100;
+        }
+    }
+}

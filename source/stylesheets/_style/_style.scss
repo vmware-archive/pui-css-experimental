@@ -1,0 +1,40 @@
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Self Clearing Goodness */
+
+.container:after,
+.row:after,
+.u-cf,
+.clear {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//Style Guide and 8px Foundation Builder
+@media (min-width: 750px) {
+    .index .monoton {
+        font-size: 96px;
+    }
+}
+
+

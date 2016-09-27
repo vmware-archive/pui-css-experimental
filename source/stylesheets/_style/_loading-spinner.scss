@@ -1,0 +1,129 @@
+
+
+.spinner {
+    width: $svg-size;
+    height: $svg-size;
+    animation: rotator ($duration/2) linear infinite;
+}
+
+.spinner-md {
+    width: ($svg-size/2);
+    height: ($svg-size/2);
+    animation: rotator ($duration/3) linear infinite;
+    .path {
+        animation: dash-75 $duration ease-in-out infinite,
+    }
+}
+
+.spinner-sm {
+    // width:($svg-size/10);
+    // height:($svg-size/10);
+    width: 16px;
+    height: 16px;
+    animation: rotator ($duration/4) linear infinite;
+    .path {
+        animation: dash-100 $duration ease-in-out infinite,
+    }
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.ring {
+    stroke: $loading-spinner;
+    opacity: .1;
+    stroke-width: 10%;
+}
+
+.path {
+    stroke-dasharray: $offset;
+    stroke-dashoffset: 360;
+    //stroke-dashoffset: $offset/2;
+    transform-origin: center;
+    stroke: $loading-spinner;
+    animation: dash-50 $duration ease-in-out infinite,
+}
+
+///////////////////To 50%
+@keyframes dash-50 {
+    0% {
+        stroke-dashoffset: 285;
+    }
+    50% {
+        stroke-dashoffset: 380;
+        // stroke-dashoffset: 360;
+    }
+    100% {
+        stroke-dashoffset: 285;
+    }
+}
+
+/////////////////To 75%
+@keyframes dash-75 {
+    0% {
+        stroke-dashoffset: 380;
+    }
+    50% {
+        stroke-dashoffset: $offset/2;
+    }
+    100% {
+        stroke-dashoffset: 380;
+    }
+}
+
+//////////////////To 100%
+@keyframes dash-100 {
+    0% {
+        stroke-dashoffset: 430;
+    }
+    50% {
+        stroke-dashoffset: 146;
+    }
+    100% {
+        stroke-dashoffset: 430;
+    }
+}
+//Spinners inside of buttons
+.btn {
+    .spinner {
+        @extend .spinner-sm;
+        margin-bottom: -3px;
+        margin-left: 5px;
+        .ring {
+            stroke: #1B78B3;
+        }
+        .path {
+            stroke: #1B78B3;
+        }
+    }
+}
+//Colored Buttons
+.btn-highlight, .btn-highlight-alt, .btn-danger {
+    .spinner {
+        .ring {
+            stroke: #ffffff;
+        }
+        .path {
+            stroke: #ffffff;
+        }
+    }
+}
+.btn-lowlight{
+    .spinner {
+        .ring {
+            stroke: #607580;
+        }
+        .path {
+            stroke: #607580;
+        }
+    }
+}
+
+
+

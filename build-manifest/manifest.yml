@@ -1,0 +1,6 @@
+applications:
+- name: pui-css-experimental
+  memory: 64M
+  instances: 1
+  buildpack: staticfile_buildpack
+

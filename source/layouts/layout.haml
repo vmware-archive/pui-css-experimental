@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
+         
+    %title= current_page.data.title || "PUI Experimental"
+
+
+    %link{:href => "//fonts.googleapis.com/css?family=Monoton|Shrikhand|Lato:300,400,600", :rel => "stylesheet", :type => "text/css"}
+
+    //Google Material Font Icon
+    -# %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
+
+    //8pt Icon
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon", :sizes => "180x180"}
+    %link{:href => "/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}
+    %link{:href => "/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}
+
+
+    =stylesheet_link_tag :site
+    =javascript_include_tag :all
+
+    
+  %body{:class => page_classes}
+    = yield

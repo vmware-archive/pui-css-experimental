@@ -1,0 +1,35 @@
+.page {
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+.section-content,
+.page-container {
+    max-width: 1400px;
+}
+
+.section-header {
+    width: 100%;
+    padding-bottom: $spacing-base;
+    //border-bottom: solid 1px $table-border-color;
+}
+
+.section-format {
+    padding: ($spacing-base*2);
+    border: solid 1px $table-border-color;
+    border-radius:2px;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

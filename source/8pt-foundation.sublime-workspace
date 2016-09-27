@@ -1,0 +1,805 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"animation",
+				"animation-delay"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"tab",
+				"table-layout"
+			],
+			[
+				"spinn",
+				"spinner-sm"
+			],
+			[
+				"notific",
+				"notification-head"
+			],
+			[
+				"secret",
+				"secret-dev-tools"
+			],
+			[
+				"noti",
+				"notification-center"
+			],
+			[
+				"fist",
+				"first-child"
+			],
+			[
+				"fa",
+				"fa-external-link"
+			],
+			[
+				"whit",
+				"white-space"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"bacgrou",
+				"background-color"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"s",
+				"scroll"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "styleguide.html.haml",
+			"settings":
+			{
+				"buffer_size": 27879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/_style/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 4280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/_style/_code.scss",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/_style/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 514,
+				"line_ending": "Unix",
+				"name": "_color.scss"
+			}
+		},
+		{
+			"file": "stylesheets/_style/_style.scss",
+			"settings":
+			{
+				"buffer_size": 569,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/edahl/workspace/personal/middleman-starter",
+		"/Users/edahl/workspace/personal/middleman-starter/source",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_style",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_material"
+	],
+	"file_history":
+	[
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/site.css.scss",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/_custom/_custom.scss",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/_style/_video.scss",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/_style/_flexboxgrid.scss",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/_style/_positioning.scss",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/_style/_layout.scss",
+		"/Users/edahl/workspace/appsMan/source/org.haml",
+		"/Users/edahl/workspace/pui-svg-lib/source/index.html.haml",
+		"/Users/edahl/workspace/pui-svg-lib/source/layouts/layout.haml",
+		"/Users/edahl/workspace/pui-svg-lib/source/library.html",
+		"/Users/edahl/workspace/pui-svg-lib/source/stylesheets/_vendor/pui/_components-2016-08-11.css.scss",
+		"/Users/edahl/workspace/appsMan/source/layouts/layout.haml",
+		"/Users/edahl/workspace/pui-svg-lib/source/stylesheets/_vendor/_PUI/_components.scss",
+		"/Users/edahl/workspace/pui-svg-lib/README.md",
+		"/Users/edahl/workspace/pui-svg-lib/build-manifest/manifest.yml",
+		"/Users/edahl/workspace/appsMan/source/shared/_footer.haml",
+		"/Users/edahl/workspace/personal/leucadia-pictures/source/stylesheets/site.css.scss",
+		"/Users/edahl/workspace/jswag/Procfile",
+		"/Users/edahl/workspace/jswag/README.md",
+		"/Users/edahl/workspace/testapp-1_manifest.yml",
+		"/Users/edahl/workspace/personal/leucadia-pictures/build-manifest/manifest.yml",
+		"/Users/edahl/workspace/personal/leucadia-pictures/Rakefile",
+		"/Users/edahl/workspace/appsMan/source/javascripts/_custom/modals.js",
+		"/Users/edahl/workspace/appsMan/source/space-playground.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_style/_positioning.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_style/_typography.scss",
+		"/Users/edahl/Dropbox (Personal)/Documents/subscribe.html",
+		"/Users/edahl/workspace/personal/paypal-1c/source/index.html.haml",
+		"/Users/edahl/workspace/personal/paypal-1c/README.md",
+		"/Users/edahl/workspace/personal/paypal-1c/Rakefile",
+		"/Users/edahl/workspace/personal/paypal-1c/build-manifest/manifest.yml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_style/_whitespace.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/styleguide.html.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_8pt-foundation/_8pt-style.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/README.md",
+		"/Users/edahl/workspace/personal/middleman-starter/source/layouts/layout.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_style/_code.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_lists.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_code.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_tables.scss",
+		"/Users/edahl/workspace/appsMan/source/javascripts/_custom/app-page.js",
+		"/Users/edahl/workspace/appsMan/source/space-async.haml",
+		"/Users/edahl/workspace/appsMan/source/marketplace-serviceasync-plan.haml",
+		"/Users/edahl/workspace/appsMan/source/marketplace-serviceasync-plan-v2.haml",
+		"/Users/edahl/workspace/appsMan/source/marketplace-service-plan.haml",
+		"/Users/edahl/workspace/appsMan/source/javascripts/_custom/marketplace-serviceasync-plan-v2.haml",
+		"/Users/edahl/workspace/appsMan/source/marketplace-service-plan-v2.haml",
+		"/Users/edahl/workspace/appsMan/source/stylesheets/vendor/_custom-components/_experimental.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_loading-spinner.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_flexboxgrid/flexboxgrid.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_variables.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_typography.scss",
+		"/Users/edahl/workspace/appsMan/source/stylesheets/vendor/pui/pivotal-ui-v4-2016-3-23.scss",
+		"/Users/edahl/workspace/appsMan/source/shared/_spinner-md.haml",
+		"/Users/edahl/workspace/appsMan/source/shared/_spinner-sm.haml",
+		"/Users/edahl/workspace/appsMan/source/shared/_spinner.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/images/loading/spinner.svg",
+		"/Users/edahl/workspace/personal/middleman-starter/source/images/loading/spinner-sm.svg",
+		"/Users/edahl/workspace/personal/middleman-starter/source/images/loading/spinner-md.svg",
+		"/Users/edahl/workspace/appsMan/source/stylesheets/vendor/_custom-components/_loading-spinner.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_material/_colors.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_8px-foundation/_8px-style.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_flexboxgrid/_flexboxgrid-12.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/_flexboxgrid/_flexbox-col.scss",
+		"/Users/edahl/workspace/appsMan/source/marketplace-service.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_oo-whitespace.scss",
+		"/Users/edahl/workspace/appsMan/source/stylesheets/vendor/_custom-components/_animation.scss",
+		"/Users/edahl/workspace/appsMan/source/stylesheets/vendor/_custom-components/_empty-panel.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/index.html.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/config.rb",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_svg-library.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/style-guide.html.haml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_shadows.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_normalize.scss",
+		"/Users/edahl/Google Drive/CF Design/PUI/04_assets/icons/material-design-icons-2.2.0/alert/svg/design/ic_add_alert_48px.svg",
+		"/Users/edahl/Google Drive/CF Design/PUI/04_assets/icons/material-design-icons-2.2.0/alert/svg/production/ic_add_alert_48px.svg",
+		"/Users/edahl/workspace/personal/middleman-starter/Rakefile",
+		"/Users/edahl/workspace/personal/middleman-starter/build-manifest/manifest.yml",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_forms.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_video.scss",
+		"/Users/edahl/workspace/personal/designermeet/Rakefile",
+		"/Users/edahl/workspace/appsMan/Rakefile",
+		"/Users/edahl/workspace/personal/designermeet/source/style-guide.html.haml",
+		"/Users/edahl/workspace/personal/designermeet/source/hungry.html.haml",
+		"/Users/edahl/workspace/personal/designermeet/source/layouts/layout.haml",
+		"/Users/edahl/workspace/personal/designermeet/source/stylesheets/_normalize.scss",
+		"/Users/edahl/workspace/personal/designermeet/source/stylesheets/site.css.scss",
+		"/Users/edahl/workspace/personal/designermeet/source/stylesheets/_custom/_media-sizes.scss",
+		"/Users/edahl/workspace/personal/designermeet/source/stylesheets/_custom/_style.scss",
+		"/Users/edahl/workspace/personal/designermeet/source/stylesheets/_vendor/_skeleton/skeleton.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_style.scss",
+		"/Users/edahl/Downloads/flexboxgrid-6.3.0/index.html",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/skeleton.scss",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_custom/_flexboxgrid.scss",
+		"/Users/edahl/Downloads/flexboxgrid-6.3.0/css/index.css",
+		"/Users/edahl/Downloads/flexboxgrid-6.3.0/css/flexboxgrid.css",
+		"/Users/edahl/workspace/personal/middleman-starter/source/stylesheets/_vendor/skeleton-example.scss",
+		"/Users/edahl/Downloads/Skeleton-2.0.4/css/skeleton.css",
+		"/Users/edahl/Downloads/Skeleton-2.0.4/css/normalize.css",
+		"/Users/edahl/workspace/appsMan/source/javascripts/app.js",
+		"/Users/edahl/workspace/appsMan/source/usage-report.haml",
+		"/Users/edahl/workspace/appsMan/source/accounting-report.haml",
+		"/Users/edahl/workspace/appsMan/source/service.haml",
+		"/Users/edahl/workspace/appsMan/source/app.haml",
+		"/Users/edahl/workspace/appsMan/source/space.haml",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/source/javascripts/_bootstrap-sprockets.js",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/build/javascripts/bootstrap-sprockets.js",
+		"/Users/edahl/workspace/appsMan/config.rb",
+		"/Users/edahl/workspace/appsMan/config.ru",
+		"/Users/edahl/workspace/appsMan/Gemfile",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/build/stylesheets/site.css",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/build/stylesheets/site",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/config.ru",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/Gemfile",
+		"/Users/edahl/workspace/personal/middleman-bootstrap/config.rb",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/stylesheets/_flexboxgrid.scss",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/stylesheets/site.css.scss",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/about.haml",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/layouts/layout.erb",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/index.haml",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/index.html.haml",
+		"/Users/edahl/workspace/personal/middleman-vanilla/source/layouts/layout.haml",
+		"/Users/edahl/workspace/personal/middleman-vanilla/config.rb",
+		"/Users/edahl/Desktop/layouts/layout.haml",
+		"/Users/edahl/workspace/appsMan/source/shared/_topbar.haml",
+		"/Users/edahl/workspace/appsMan/source/org-create.haml",
+		"/Users/edahl/workspace/appsMan/source/javascripts/_custom/elliots-fix.js",
+		"/Users/edahl/workspace/appsMan/source/tools.haml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sm",
+			"md",
+			"xs",
+			"100",
+			"50",
+			"5",
+			"xxxxl",
+			"1",
+			"5px",
+			"disabled",
+			"_style",
+			"margin-auto",
+			"service",
+			"dark-6",
+			"border-radius",
+			"%h3.section-header",
+			"%h3",
+			"%h1",
+			"6",
+			"5",
+			"add",
+			"_custom",
+			"#",
+			"new",
+			"user",
+			"16px",
+			"#step1",
+			"hover",
+			"path",
+			"margin",
+			"error",
+			".error",
+			"search",
+			"$btn-negative-color",
+			"positive",
+			"#fff",
+			"positive",
+			"#fff",
+			"positive",
+			"highlight",
+			"highlight-alt",
+			"highlight",
+			"default",
+			"positive",
+			"highlight",
+			"btn-default",
+			".btn-default-alt",
+			"btn-default",
+			".btn-default",
+			"disabled",
+			"md",
+			"lg",
+			"md",
+			".container",
+			"xs",
+			"padding-left: 1rem;",
+			"padding-right: 1rem;",
+			"Header",
+			"{\n",
+			"sm",
+			"xs",
+			"sm",
+			"xs",
+			"91.667%",
+			"83.333%",
+			"75%",
+			"66.667%",
+			"58.333%",
+			"50%",
+			"41.667%",
+			"33.333%",
+			"25%",
+			"16.667%",
+			"667",
+			"8.333%",
+			".container",
+			"col-md",
+			"members",
+			":hover",
+			".btn-default-alt",
+			"0",
+			"grey",
+			"7",
+			"positive",
+			"Positive",
+			"positive",
+			"Positive",
+			"positive",
+			"highlight",
+			"hightlight",
+			"highlight",
+			"Highlight",
+			"highlight",
+			"Highlight",
+			"green",
+			"default",
+			"rgb(96,125,139)",
+			"607D8B",
+			"apps",
+			"partial",
+			"font-size: inhe",
+			"h1",
+			"red",
+			"rgba(33,150,243,1)",
+			"text-align",
+			": 140px",
+			": 120px",
+			": 40px",
+			": 20px",
+			": 10px",
+			"7px",
+			"5px !",
+			"* {",
+			"* ",
+			"*",
+			"&lt;",
+			"DEVELOP",
+			"success",
+			".service",
+			".space",
+			"service key ",
+			"service key",
+			"accounting",
+			"Accounting",
+			"running",
+			"hover-name",
+			"security",
+			"#secur"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"%h2.section-header",
+			"%h3.section-header",
+			"padding-left: $spacing-base;",
+			"padding-right: $spacing-base;",
+			"col-xs",
+			"highlight",
+			": ($spacing-base*5)",
+			": ($spacing-base*4)",
+			": ($spacing-base*3)",
+			": ($spacing-base*2)",
+			": $spacing-base",
+			"($spacing-base/2)",
+			"$spacing-small !",
+			"<",
+			".box-shadow",
+			"$box-shadow",
+			".box-shadow",
+			"%i.fa.fa-user.highlight\n                              %i.overlay.fa.fa-check",
+			"col-xs",
+			"",
+			".autosearch-appstatus",
+			".media-body",
+			".media-left.media-middle",
+			"%td.media",
+			".event-icon.prl",
+			"pan",
+			".autosearch-list-container",
+			"search-list",
+			".col-xs",
+			".log-line.phm.ng-scope.hide",
+			".col-xs",
+			".col",
+			".col-xs",
+			".hide",
+			"my",
+			"/>",
+			".gravatar.gravatar-sm\n                                %img.small{:alt => \"\", :height => \"20\", :src => \"http://placehold.it/20x20\", :width => \"20\"}\n                                  %i.fa.fa-user\n                                  %i.overlay.fa.fa-envelope",
+			".gravatar.gravatar-sm\n                                %img.small{:alt => \"D41d8cd98f00b204e9800998ecf8427e\", :height => \"20\", :src => \"https://secure.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e.jpg?s=20&amp;d=blank\", :width => \"20\"}\n                                  %i.fa.fa-user\n                                  %i.overlay.fa.fa-envelope",
+			"%input{:type => \"checkbox\", :class => \"togglecheckbox2\"}",
+			"%input{:type => \"checkbox\", :class => \"togglecheckbox\"}"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "styleguide.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1302
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stylesheets/_style/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1801,
+								1793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "stylesheets/_style/_code.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								326,
+								326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "stylesheets/_style/_colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"auto_name": "_color.scss",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "stylesheets/_style/_style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "8pt-foundation.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"app-v7.haml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

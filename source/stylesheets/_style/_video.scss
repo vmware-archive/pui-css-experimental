@@ -1,0 +1,36 @@
+.video-bg-wrapper {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    //Put a BG image for when it loads. Should be first frame
+    //-------------------------------------------------------
+    background: url(../../images/video-bg-placehold.png) #000 no-repeat center center fixed;
+    background-size: 100% auto;
+}
+
+//stop loading for mobile devices
+@media screen and (max-device-width: 800px) {
+    .video-bg-wrapper {
+        background: url(../../images/video-bg-placehold.png) #000 no-repeat center center fixed;
+    }
+    .video-bg {
+        display: none;
+    }
+}

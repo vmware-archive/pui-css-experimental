@@ -1,0 +1,207 @@
+//Styleguide
+//---------------------------------------------
+$sg-rim-high:#fff;
+
+
+.styleguide {
+    .styleguide-header {
+        color:$blue-500;
+    }
+    
+}
+
+.sg-sidenav {
+    z-index: 1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:240px;
+    height: 100vh;
+}
+.sg-content {
+    padding-left:256px;
+}
+
+
+
+
+.index .sg {
+    animation: sg-bg-gradients 8s infinite linear;
+    background-color: $blue-500;
+    .sg-rim {
+
+        position: absolute;
+        top: 0;
+        margin: 16px;
+        width: calc(100% - 32px);
+        height: calc(100% - 32px);
+        border: solid 8px rgba(255, 255, 255, 0.5);
+    }
+    .sg-rim-left {
+        position: absolute;
+        left: -8px;
+        top: -8px;
+        width: 8px;
+        height: calc(100% + 16px);
+        // background-color: red;
+        overflow:hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            left:0;
+            width: 8px;
+            height: calc(100% + 16px);
+            background-color: $sg-rim-high;
+            animation: rim-left 4s infinite linear;
+        }
+    }
+    .sg-rim-right {
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        width: 8px;
+        height: calc(100% + 16px);
+        // background-color: red;
+        overflow:hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            // right:-8px;
+            width: 8px;
+            height: calc(100% + 16px);
+            background-color: $sg-rim-high;
+            animation: rim-right 4s infinite linear;
+        }
+    }
+    .sg-rim-top {
+        position: absolute;
+        left: -8px;
+        top: -8px;
+        width: calc(100% + 16px);
+        height: 8px;
+        // background-color: green;
+        overflow:hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            left:0;
+            width: calc(100% + 16px);
+            height: 8px;
+            background-color: $sg-rim-high;
+            animation: rim-top 4s infinite linear;
+        }
+    }
+    .sg-rim-bottom {
+        position: absolute;
+        right: -8px;
+        bottom: -8px;
+        width: calc(100% + 16px);
+        height: 8px;
+        // background-color: green;
+        overflow:hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            right:0;
+            width: calc(100% + 16px);
+            height: 8px;
+            background-color: $sg-rim-high;
+            animation: rim-bottom 4s infinite linear;
+        }
+    }
+}
+
+
+
+@keyframes rim-left {
+	0% {
+		top:calc(100% + 16px);
+	}
+	50% {
+		top:calc(-100% - 16px);
+	}
+	
+	100% {
+		top:calc(-100% - 16px);
+	}
+}
+@keyframes rim-top{
+	0% {
+		left:calc(-100% - 16px);
+	}
+	25% {
+		left:calc(-100% - 16px);
+		
+	}
+	75% {
+		left:calc(100% + 16px);
+	}
+	100% {
+		left:calc(100% + 16px);
+	}
+}
+
+@keyframes rim-right{
+	0% {
+		top:calc(-100% - 16px);
+	}
+	50% {
+		top:calc(-100% - 16px);
+	}
+	100% {
+		top:calc(100% + 16px);
+	}
+}
+@keyframes rim-bottom{
+	0% {
+		left:calc(-100% - 16px);
+	}
+	25% {
+		left:calc(-100% - 16px);
+		
+	}
+	75% {
+		left:calc(100% + 16px);
+	}
+	100% {
+		left:calc(100% + 16px);
+	}
+}
+
+
+
+@keyframes rim-bottom{
+	0% {
+		right:0;
+	}
+
+	25% {
+		right:calc(100% + 16px);
+		
+	}
+	74.9999% {
+		right:calc(100% + 16px);
+	}
+	75% {
+		right:calc(-100% - 16px);
+	}
+	100% {
+		right:0;
+	}
+}
+
+@keyframes sg-bg-gradients {
+    0% {
+        background-color: $blue-600;
+    }
+    33% {
+        background-color: #31AEF2;
+    }
+    66% {
+        background-color: #2ED1E6;
+    }
+    100% {
+        background-color: $blue-600;
+    }
+}

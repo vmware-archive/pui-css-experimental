@@ -1,0 +1,170 @@
+
+.table {
+    background-color: transparent;
+    margin-bottom: ($spacing-base*2);
+    //Table Row Header
+    .th {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $blue-grey-400;
+        .td {
+            border-bottom: solid 1px $table-border-color;
+        }
+        &:first-child .td {
+            &:first-child {
+                border-radius: 2px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 2px 0 0;
+            }
+        }
+    }
+    //Table Row
+    .tr {
+        &:last-child .td {
+            border-bottom: solid 1px $table-border-color;
+            &:first-child {
+                border-radius: 0 0 0 2px;
+            }
+            &:last-child {
+                border-radius: 0 0 2px 0;
+            }
+        }
+        &:hover {
+            background-color: $grey-50;
+        }
+        &.no-hover {
+            background-color: transparent;
+        }
+    }
+    //Table Cell
+    .td {
+        border-left: solid 1px $table-border-color;
+        border-top: solid 1px $table-border-color;
+        padding: $spacing-base;
+        //Vert-middle
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:last-child {
+            border-right: solid 1px $table-border-color;
+        }
+    }
+    &.no-hover {
+        .tr:hover {
+            background-color: transparent;
+        }
+    }
+    &.td-hover {
+        .tr:hover {
+            background-color: transparent;
+        }
+        .tr .td:hover {
+            background-color: $grey-50;
+        }
+    }
+    //No cell borders in row
+    .tr.tr-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //Attached to .table
+    &.tr-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //No cell borders in row
+    .th.th-no-h-borders {
+        .td {
+            border-left: none;
+            &:first-child {
+                border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //No borders on table
+    &.table-no-borders {
+        .th .td,
+        .tr .td {
+            border: none;
+        }
+    }
+    //Table Row Collapse
+    &.table-sm-row {
+        @media only screen and (max-width: 480px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    &.table-md-row {
+        @media only screen and (max-width: 620px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+    &.table-lg-row {
+        @media only screen and (max-width: 750px) {
+            .tr {
+                &:hover {
+                    background-color: transparent;
+                }
+                &:last-child .td {
+                    border-bottom: none;
+                    &:last-child {
+                        border-bottom: solid 1px $table-border-color;
+                    }
+                }
+            }
+            .tr .td:hover {
+                background-color: $grey-50;
+            }
+            .td {
+                border-left: solid 1px $table-border-color;
+                border-right: solid 1px $table-border-color;
+            }
+        }
+    }
+
+}
+
