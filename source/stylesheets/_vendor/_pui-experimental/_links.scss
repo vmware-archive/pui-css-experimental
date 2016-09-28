@@ -2,12 +2,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
-    color: $blue-700;
+    color: $link-color;
     text-decoration: none;
 }
 
 a:hover {
-    color: $blue-800;
+    color: $link-hover-color;
 }
 
 .no-underline {

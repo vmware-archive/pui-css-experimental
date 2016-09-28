@@ -3,43 +3,45 @@
 @import "normalize";
 
 ////Variables
-@import "_style/variables";
+@import "_vendor/_pui-experimental/variables";
+
+////PUI
+//@import "_vendor/_pui/pui-variables";
+@import "_vendor/_pui/pui-colors";
+//@import "_vendor/_pui/pui-typography";
+
+
+
 
 
 
 ////Vendor---------------------------
 
-//8pt-Foundation-Styleguide
+//Styleguide
 //-------------------------------
-@import "_vendor/_8pt-foundation/_8pt-style";
-
-//Google Material (load colors OR all of material)
-//-------------------------------
-@import "_vendor/_material/colors";
-//@import "_vendor/_material/material";
+@import "_vendor/_styleguide/_styleguide";
 
 
 
-
-////8pt-Foundation-Core---------------------------
-@import "_style/box-shadows";
-@import "_style/buttons";
-@import "_style/code";
-@import "_style/colors";
-@import "_style/flexboxgrid";
-@import "_style/forms";
-@import "_style/layout";
-@import "_style/links";
-@import "_style/lists";
-@import "_style/loading-spinner";
-@import "_style/media-sizes";
-@import "_style/positioning";
-@import "_style/style";
-@import "_style/svg-library";
-@import "_style/tables";
-@import "_style/typography";
-@import "_style/video";
-@import "_style/whitespace";
+////PUI Experimental---------------------------
+@import "_vendor/_pui-experimental/box-shadows";
+@import "_vendor/_pui-experimental/buttons";
+@import "_vendor/_pui-experimental/code";
+@import "_vendor/_pui-experimental/colors";
+@import "_vendor/_pui-experimental/flexboxgrid";
+@import "_vendor/_pui-experimental/forms";
+@import "_vendor/_pui-experimental/layout";
+@import "_vendor/_pui-experimental/links";
+@import "_vendor/_pui-experimental/lists";
+@import "_vendor/_pui-experimental/loading-spinner";
+@import "_vendor/_pui-experimental/media-sizes";
+@import "_vendor/_pui-experimental/positioning";
+@import "_vendor/_pui-experimental/style";
+@import "_vendor/_pui-experimental/svg-library";
+@import "_vendor/_pui-experimental/tables";
+@import "_vendor/_pui-experimental/typography";
+@import "_vendor/_pui-experimental/video";
+@import "_vendor/_pui-experimental/whitespace";
 
 
 

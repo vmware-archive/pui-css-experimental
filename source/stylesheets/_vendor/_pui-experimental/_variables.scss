@@ -1,0 +1,318 @@
+
+
+//Spacing Base
+//---------------------------------------------
+$spacing-small:2px;
+$spacing-base:8px;
+//PUI Colors
+// Accent colors - teal for now
+// -------------------------
+
+$teal-1: #083330;
+$teal-2: #0B4D48;
+$teal-3: #025A53;
+$teal-4: #0F6660;
+$teal-5: #00776D;
+$teal-6: #138078;
+$teal-7: #179990;
+$teal-8: #00A79D;
+$teal-9: #1BB3A8;
+$teal-10: #1FCCC0;
+$teal-11: #D9FFFC;
+
+
+// Grays - use these rather than the bootstrap grays
+// -------------------------
+
+$gray-1: #282828;
+$gray-2: #424242;
+$gray-3: #686868;
+$gray-4: #8d8e8e;
+$gray-5: #b4b4b4;
+$gray-6: #c3c5c7;
+$gray-7: #d4d9d9;
+$gray-8: #e0e4e5;
+$gray-9: #ecefef;
+$gray-10: #F8F8F8;
+$gray-11: white;
+
+// Blue
+// -------------------------
+
+$blue-1: #135680;
+$blue-2: #176799;
+$blue-3: #1B78B3;
+$blue-4: #1F8ACC;
+$blue-5: #229BE6;
+$blue-6: #D9F0FF;
+
+// Navy
+// -------------------------
+
+$navy-1: #232B2F;
+$navy-2: #243641;
+$navy-3: #3D4A51;
+$navy-4: #4F6069;
+$navy-5: #607580;
+$navy-6: #788E9A;
+$navy-7: #A2B1B9;
+$navy-8: #C5CED3;
+$navy-9: #DFE5E8;
+$navy-10: #EAEDEF;
+$navy-11: #F5F6F7;
+
+// Red
+// -------------------------
+
+$red-1: #801319;
+$red-2: #99171D;
+$red-3: #B31B22;
+$red-4: #CC1F27;
+$red-5: #F2242F;
+$red-6: #FFD9DB;
+
+// Green
+// -------------------------
+$green-1: #4D8013;
+$green-2: #5C9917;
+$green-3: #6CB31B;
+$green-4: #7BCC1F;
+$green-5: #8AE622;
+$green-6: #EDFFD9;
+
+// Yellow
+// -------------------------
+$yellow-1: #806613;
+$yellow-2: #997B17;
+$yellow-3: #B38F1B;
+$yellow-4: #CCA41F;
+$yellow-5: #E6B822;
+$yellow-6: #FFF6D9;
+
+
+// Shadows
+// -------------------------
+
+$shadow-1 : rgba(0, 0, 0, 0.3);
+$shadow-2 : rgba(0, 0, 0, 0.14);
+$shadow-3 : rgba(0, 0, 0, 0.07);
+$shadow-4 : rgba(0, 0, 0, 0.035);
+$btn-shadow: rgba(211,217,217,0.50);
+$glow-1 : rgba(255,255,255,0.1);
+$glow-2 : rgba(255,255,255,0.2);
+$glow-3 : rgba(255,255,255,0.4);
+$glow-4 : rgba(255,255,255,0.6);
+$glow-5 : rgba(255,255,255,1);
+
+
+// gray backgrounds
+$neutral-1: $gray-1;
+$neutral-2: $gray-2;
+$neutral-3: $gray-3;
+$neutral-4: $gray-4;
+$neutral-5: $gray-5;
+$neutral-6: $gray-6;
+$neutral-7: $gray-7;
+$neutral-8: $gray-8;
+$neutral-9: $gray-9;
+$neutral-10: $gray-10;
+$neutral-11: $gray-11;
+// Dark colors
+// -------------------------
+
+$dark-1:                $navy-1;
+$dark-2:                $navy-2;
+$dark-3:                $navy-3;
+$dark-4:                $navy-4;
+$dark-5:                $navy-5;
+$dark-6:                $navy-6;
+$dark-7:                $navy-7;
+$dark-8:                $navy-8;
+$dark-9:                $navy-9;
+$dark-10:               $navy-10;
+$dark-11:               $navy-11;
+
+// Brand colors
+// -------------------------
+
+$brand-1:               $teal-1;
+$brand-2:               $teal-2;
+$brand-3:               $teal-3;
+$brand-4:               $teal-4;
+$brand-5:               $teal-5;
+$brand-6:               $teal-6;
+$brand-7:               $teal-7;
+$brand-8:               $teal-8;
+$brand-9:               $teal-9;
+$brand-10:              $teal-10;
+$brand-11:              $teal-11;
+
+$brand-primary:         #1b92cb !default;
+$brand-success:         #5cb85c !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #CA7070 !default;
+$brand-info:            #5bc0de !default;
+
+// Accents
+// -------------------------
+
+$accent-1: $blue-1;
+$accent-2: $blue-2;
+$accent-3: $blue-3;
+$accent-4: $blue-4;
+$accent-5: $blue-5;
+$accent-6: $blue-6;
+
+// Errors
+// -------------------------
+
+$error-1: $red-1;
+$error-2: $red-2;
+$error-3: $red-3;
+$error-4: $red-4;
+$error-5: $red-5;
+$error-6: $red-6;
+
+// Warnings
+// -------------------------
+
+$warn-1: $yellow-1;
+$warn-2: $yellow-2;
+$warn-3: $yellow-3;
+$warn-4: $yellow-4;
+$warn-5: $yellow-5;
+$warn-6: $yellow-6;
+
+// Success
+// -------------------------
+
+$success-1: $green-1;
+$success-2: $green-2;
+$success-3: $green-3;
+$success-4: $green-4;
+$success-5: $green-5;
+$success-6: $green-6;
+
+// Scaffolding
+// -------------------------
+
+$html-bg:               $neutral-11;
+$body-bg:               transparent;
+$text-color:            $dark-2 !default;
+
+// Links
+// -------------------------
+
+$link-color:                              $accent-3;
+$link-hover-color:                        $accent-4;
+$link-hover-decoration:                   underline !default;
+
+// Typography
+// -------------------------
+
+$font-family-sans-serif:  'Source Sans Pro', 'SourceSansPro', sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:   Menlo, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          16px !default;
+$font-size-extra-large:   ceil($font-size-base * 1.5) !default; // ~21px
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-medium:        ceil($font-size-base * 1.14) !default; // ~16px
+$font-size-small:         14px;
+$font-size-extra-small:   12px;
+
+
+$font-weight-em-low:      200;
+$font-weight-em-default:  400;
+$font-weight-em-high:     600;
+$font-weight-em-max:      700;
+
+
+$headings-font-family:    null;
+$headings-font-weight:    400 !default;
+$former-headings-line-height: 1.5;
+$headings-line-height:    1.286 !default;
+$headings-padding:        1em * ($former-headings-line-height - $headings-line-height) / 2;
+$headings-color:          null;
+
+//TODO: create a mixin that will determine multiplers based on px-size
+$font-size-h1:            31px;
+$font-weight-h1:          400;
+
+$font-size-h2:            25px;
+$font-weight-h2:          400;
+
+$font-size-h3:            20px;
+$font-weight-h3:          400;
+
+$font-size-h4:            18px;
+$font-weight-h4:          400;
+
+$font-size-h5:            16px;
+$font-weight-h5:          400;
+
+$font-size-h6:            13px;
+$font-weight-h6:          400;
+
+$line-height-base:        1.5; //1.428571429 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
+
+$font-size-title:         42px;
+
+
+
+/////////////////////////
+//EXPERIMENTAL
+////////////////////////
+
+
+
+
+//Forms
+//---------------------------------------------
+$input-border:$dark-6;
+$input-border-focus:$dark-6;
+$input-disabled:$dark-11;
+$input-border-invalid:$dark-6;
+$input-invalid-text:$dark-6;
+$input-border-valid:$dark-6;
+//Buttons
+//---------------------------------------------
+//default
+$btn-default-color:$dark-5;
+$btn-default-color-hover:$dark-3;
+$btn-default-color-focus:$dark-3;
+//hightlight
+$btn-highlight-color:$accent-3;
+$btn-highlight-color-hover:$accent-2;
+$btn-highlight-color-focus:$accent-2;
+//positive
+$btn-positive-color:$success-2;
+$btn-positive-color-hover:$success-1;
+$btn-positive-color-focus:$success-1;
+//negative
+$btn-negative-color:$error-3;
+$btn-negative-color-hover:$error-2;
+$btn-negative-color-focus:$error-2;
+//Button Radius
+$btn-radius:2px;
+//Loading Spinner
+$loading-spinner:$accent-3;
+$svg-size: 100px;
+$offset: 430;
+$duration: 2s;
+//Tables
+$table-border-color:$dark-10;
+
+// $table-border-color:rgba(0, 0, 0, .16);
+//Box Shadows
+//---------------------------------------------
+//Shadow - key light
+$box-shadow-key-1: 0px 2px 2px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-key-2: 0px 4px 4px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-key-3: 0px 8px 8px 0px rgba(36, 54, 65, 0.1);
+//Shadow - ambient light
+$box-shadow-amb-1: 0px 0px 2px 0px rgba(36, 54, 65, 0.1);
+$box-shadow-amb-2: 0px 0px 4px 1px rgba(36, 54, 65, 0.1);
+$box-shadow-amb-3: 0px 0px 8px 1px rgba(36, 54, 65, 0.1);

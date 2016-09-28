@@ -5,7 +5,7 @@ $sg-rim-high:#fff;
 
 .styleguide {
     .styleguide-header {
-        color:$blue-500;
+        color:$accent-3;
     }
     
 }
@@ -27,7 +27,7 @@ $sg-rim-high:#fff;
 
 .index .sg {
     animation: sg-bg-gradients 8s infinite linear;
-    background-color: $blue-500;
+    background-color: $accent-3;
     .sg-rim {
 
         position: absolute;
@@ -193,7 +193,7 @@ $sg-rim-high:#fff;
 
 @keyframes sg-bg-gradients {
     0% {
-        background-color: $blue-600;
+        background-color: $accent-3;
     }
     33% {
         background-color: #31AEF2;
@@ -202,6 +202,6 @@ $sg-rim-high:#fff;
         background-color: #2ED1E6;
     }
     100% {
-        background-color: $blue-600;
+        background-color: $accent-3;
     }
 }

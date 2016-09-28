@@ -7,8 +7,11 @@
          
     %title= current_page.data.title || "PUI Experimental"
 
-
+    //Monoton, Shrikhand, Lato -- Only for fun
     %link{:href => "//fonts.googleapis.com/css?family=Monoton|Shrikhand|Lato:300,400,600", :rel => "stylesheet", :type => "text/css"}
+
+    //Source Sans Pro Font
+    %link{:href => "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i", :rel => "stylesheet", :type => "text/css"}
 
     //Google Material Font Icon
     -# %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
@@ -20,6 +23,7 @@
 
 
     =stylesheet_link_tag :site
+    -# =stylesheet_link_tag :pui
     =javascript_include_tag :all
 
     
