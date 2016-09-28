@@ -10,7 +10,7 @@ input[type="button"] {
     display: inline-flex;
     position: relative;
     height: ($spacing-base*4);
-    padding: 0 ($spacing-base*3);
+    padding: 0 ($spacing-base*2);
     vertical-align: middle;
     color: $btn-default-color;
     text-align: center;
@@ -34,16 +34,25 @@ input[type="button"] {
     .svgicon {
         font-size: 18px;
         padding: 2px;
+        fill: $btn-default-color;
     }
     .spinner,
     .spinner-md,
     .spinner-sm {
-        margin-left: 8px;
-        margin-top: 6px;
+        margin-right: 2px;
+    }
+    &:hover,
+    &:focus,
+    &:hover:focus {
+        color: $btn-default-color-focus;
+        outline: none;
+        .svgicon {
+            fill: $btn-default-color-focus;
+        }
     }
 }
 
-.btn-icon {
+button.btn-icon {
     padding: 0 3px;
 }
 
@@ -60,9 +69,9 @@ input[type="button"] {
     .spinner,
     .spinner-md,
     .spinner-sm {
-        width: 18px;
-        height: 18px;
-        margin-top: 9px;
+        // width: 18px;
+        // height: 18px;
+        // margin-top: 9px;
     }
 }
 
@@ -74,14 +83,14 @@ input[type="button"] {
         padding: 0;
     }
     .svgicon {
-        font-size: 16px;
+        font-size: 14px;
     }
     .spinner,
     .spinner-md,
     .spinner-sm {
-        width: 12px;
-        height: 12px;
-        margin-top: 4px;
+        // width: 12px;
+        // height: 12px;
+        // margin-top: 4px;
     }
 }
 
@@ -322,6 +331,7 @@ input[type="button"].btn-highlight:focus:hover {
     border-color: $btn-highlight-color-hover;
     outline: none;
 }
+
 //Spinner
 button.btn-highlight,
 .button.btn-highlight,
@@ -387,6 +397,7 @@ input[type="button"].btn-highlight-alt:focus:hover {
         fill: $btn-highlight-color-hover;
     }
 }
+
 //Spinner
 button.btn-highlight-alt,
 .button.btn-highlight-alt,
@@ -649,7 +660,6 @@ input[type="button"].btn-negative-alt {
     }
 }
 
-
 //Button Groups
 //---------------------------------------
 .btn-group {
@@ -688,3 +698,15 @@ input[type="button"].btn-negative-alt {
         border-top-right-radius: $btn-radius;
     }
 }
+
+.btn-group-flat {
+    button,
+    .button {
+        padding: 0 $spacing-base;
+    }
+    .btn-icon {
+        padding: 0 3px;
+    }
+}
+
+
