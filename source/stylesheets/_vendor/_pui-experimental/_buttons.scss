@@ -350,6 +350,23 @@ input[type="button"].btn-highlight {
     }
 }
 
+//Flat Highlight
+.btn-highlight-flat {
+    color: $btn-highlight-color;
+    .svgicon {
+        fill: $btn-highlight-color;
+    }
+    &:hover,
+    &:focus,
+    &:hover:focus {
+        color: $btn-highlight-color-focus;
+        outline: none;
+        .svgicon {
+            fill: $btn-highlight-color-focus;
+        }
+    }
+}
+
 //Highlight Alt Button
 //---------------------------------------
 button.btn-highlight-alt,
@@ -472,7 +489,22 @@ input[type="button"].btn-positive {
         }
     }
 }
-
+//Flat Positive
+.btn-positive-flat {
+    color: $btn-positive-color;
+    .svgicon {
+        fill: $btn-positive-color;
+    }
+    &:hover,
+    &:focus,
+    &:hover:focus {
+        color: $btn-positive-color-focus;
+        outline: none;
+        .svgicon {
+            fill: $btn-positive-color-focus;
+        }
+    }
+}
 //Positive Alt Button
 //---------------------------------------
 button.btn-positive-alt,
@@ -594,7 +626,22 @@ input[type="button"].btn-negative {
         }
     }
 }
-
+//Flat negative
+.btn-negative-flat {
+    color: $btn-negative-color;
+    .svgicon {
+        fill: $btn-negative-color;
+    }
+    &:hover,
+    &:focus,
+    &:hover:focus {
+        color: $btn-negative-color-focus;
+        outline: none;
+        .svgicon {
+            fill: $btn-negative-color-focus;
+        }
+    }
+}
 //negative Alt Button
 //---------------------------------------
 button.btn-negative-alt,
@@ -708,5 +755,3 @@ input[type="button"].btn-negative-alt {
         padding: 0 3px;
     }
 }
-
-
