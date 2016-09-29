@@ -271,12 +271,12 @@ $font-size-title:         42px;
 
 //Forms
 //---------------------------------------------
-$input-border:$dark-6;
-$input-border-focus:$dark-6;
-$input-disabled:$dark-11;
-$input-border-invalid:$dark-6;
-$input-invalid-text:$dark-6;
-$input-border-valid:$dark-6;
+$input-border:$dark-8;
+$input-border-focus:$dark-5;
+$input-disabled:$dark-10;
+$input-border-invalid:$error-3;
+$input-invalid-text:$error-3;
+$input-border-valid:$success-2;
 //Buttons
 //---------------------------------------------
 //default

@@ -11,6 +11,7 @@ input[type="password"],
 textarea,
 select {
     display: block;
+    width:100%;
     height: ($spacing-base*4);
     padding: 4px $spacing-base;
     /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -18,6 +19,7 @@ select {
     background-color: #fff;
     border: 1px solid $input-border;
     border-radius: 2px;
+    -webkit-appearance: none;
     box-shadow: none;
     box-sizing: border-box;
     color: $dark-2;
@@ -95,12 +97,13 @@ legend {
             background-color: $input-disabled;
             cursor: default;
             pointer-events: none;
-            color: $dark-2;
-            border-color: $dark-2;
+            color: $dark-5;
+            border-color: $input-border;
         }
     }
     //Validation Icons
     .svgicon {
+        pointer-events: none;
         position: absolute;
         right: $spacing-base;
         top: $spacing-base;

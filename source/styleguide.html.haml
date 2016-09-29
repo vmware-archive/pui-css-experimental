@@ -87,18 +87,18 @@ title: 8pt Foundation Styleguide
                 %button.btn-default 
 
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                   %span
                     default
                 %button.btn-default.btn-icon
                   .svgicon
-                    =partial 'images/svg-lib/ic_autorenew_48px.svg'
+                    =partial 'images/svg-lib/autorenew.svg'
                 %button.btn-default-alt.btn-icon
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                 %button.btn-positive.btn-icon
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                 
               
                 
@@ -168,15 +168,15 @@ title: 8pt Foundation Styleguide
               %div
                 %button.btn-default.btn-sm
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                   %div small
                 %button.btn-default
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                   %div default
                 %button.btn-default.btn-lg
                   .svgicon
-                    =partial 'images/svg-lib/ic_add_48px.svg'
+                    =partial 'images/svg-lib/add.svg'
                   %div large
             %h4 Button Groups
             %p Ensure HAML button elements have no space between them (>)
@@ -191,13 +191,13 @@ title: 8pt Foundation Styleguide
                 .btn-group
                   %button.btn-default-alt.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_add_48px.svg'
+                      =partial 'images/svg-lib/add.svg'
                   %button.btn-default-alt.btn-icon>
                     .svgicon
-                      =partial 'images/svg-lib/ic_clear_48px.svg'
+                      =partial 'images/svg-lib/close.svg'
                   %button.btn-default-alt.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_search_48px.svg'
+                      =partial 'images/svg-lib/search.svg'
             %h4 Button Group Flat
             %p Flat Button Group
             .section-format
@@ -205,7 +205,7 @@ title: 8pt Foundation Styleguide
                 .btn-group-flat
                   %button.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_chevron_left_48px.svg'
+                      =partial 'images/svg-lib/chevron_left.svg'
                   %button>
                     3
                   %button>
@@ -214,21 +214,21 @@ title: 8pt Foundation Styleguide
                     5
                   %button.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_chevron_right_48px.svg'
+                      =partial 'images/svg-lib/chevron_right.svg'
               .mbxl
                 .btn-group-flat
                   %button.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_format_align_left_48px.svg'
+                      =partial 'images/svg-lib/format_align_left.svg'
                   %button.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_format_align_justify_48px.svg'
+                      =partial 'images/svg-lib/format_align_justify.svg'
                   %button.btn-icon.btn-default
                     .svgicon
-                      =partial 'images/svg-lib/ic_format_align_center_48px.svg'
+                      =partial 'images/svg-lib/format_align_center.svg'
                   %button.btn-icon
                     .svgicon
-                      =partial 'images/svg-lib/ic_format_align_right_48px.svg'
+                      =partial 'images/svg-lib/format_align_right.svg'
               %div
                 .btn-group-flat
                   %button>
@@ -241,115 +241,117 @@ title: 8pt Foundation Styleguide
                     No
 
                 
-        -# %section#inputs
-        -#   .section-content.margin-auto.paxl.mdl-color--white
-        -#     %h2.section-header Inputs
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group
-        -#           %label Email
-        -#           %input.form-control{:type => "email", :placeholder => "Enter email"}
-        -#         .form-group
-        -#           %button.btn-default Submit
-        -#     %h4 Row Form (single column)
-        -#     .section-format.mbxl.pbl
-        -#       .form-group.left
-        -#         %label Email
-        -#         %input.form-control{:type => "email", :placeholder => "Email"}
+        %section#inputs
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Inputs
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %label Email
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group
+                  %button.btn-default Submit
+            %h4 Row Form (single column)
+            .section-format.mbxl.pbl
+              .form-group.left
+                %label Email
+                %input.form-control{:type => "email", :placeholder => "Email"}
             
-        -#       .form-group.left
-        -#         %label Password
-        -#         %input.form-control{:type => "password", :placeholder => "Password"}
+              .form-group.left
+                %label Password
+                %input.form-control{:type => "password", :placeholder => "Password"}
             
-        -#       .form-group.left
+              .form-group.left
                 
-        -#         %button.btn-default.mtxxxl Submit
-        -#       .clear
-        -#     %h4 Inline Single Row
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group.form-inline
-        -#           %label Email
-        -#         .form-group.form-inline
-        -#           %input.form-control{:type => "email", :placeholder => "Enter email"}
-        -#         .form-group.form-inline
-        -#           %button.btn-default Submit
-        -#     %h4 Disabled
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group
-        -#           %label Email
-        -#           %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
-        -#         .form-group
-        -#           %button.btn-default.disabled{:disabled => ""} Submit
-        -#     %h4 Large
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group.form-lg
-        -#           %label Large
-        -#           %input.form-control{:type => "text", :placeholder => "Larger"}
-        -#         .form-group.form-lg
-        -#           %button.btn-default.btn-lg Large Btn
-        -#     %h4 Select
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group
-        -#           %select.form-control
-        -#             %option Pivotal
-        -#             %option Google
-        -#             %option Yahoo
-        -#             %option Microsoft-Linkedin
-        -#     %h4 Search
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group.form-group-search
-        -#           .svgicon
-        -#             =partial 'images/svg-lib/ic_search_48px.svg'
-        -#           %input{:type => "search", :placeholder => "Search..."}
-        -#     %h4 Text Area
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group
-        -#           %textarea{:placeholder => "Type body here..."}
-        -#     %h4 Radio/Checkbox
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group
-        -#           %input{:type => "checkbox"}
-        -#           Remember Me
-        -#         .form-group
-        -#           %input{:type => "radio"}
-        -#           Don't Remember me
-        -#     %h4 Error/Acceptance States
-        -#     %p Click on the red "x" in the error state to clear the form field and rest the error.
-        -#     .section-format.mbxl.pbl
-        -#       %form
-        -#         .form-group.form-inline
-        -#           %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
-        -#           .svgicon.invalid
-        -#             =partial 'images/svg-lib/ic_clear_48px.svg'
-        -#           .invalid-text Error please try again
-        -#         .form-group.form-inline
-        -#           %input.valid{:type => "text", :placeholder => "Enter text", :value => "Right Answer"}
-        -#           .svgicon.valid
-        -#             =partial 'images/svg-lib/ic_check_circle_48px.svg'
-        -#         .form-group.form-inline
-        -#           %input.loader{:type => "text", :placeholder => "Enter text", :value => "Hold up..."}
-        -#           .svgicon.loading
-        -#             =partial 'images/loading/spinner-sm.svg'
-        -#     %h4 Simple Forms
-        -#     %p Iron out simple use case.
-        -#     .section-format.mbxl.pbl
-        -#       %form.simple-form
-        -#         .form-group.form-inline
-        -#           %input.form-control{:type => "email", :placeholder => "Enter email"}
-        -#         .form-group.form-inline
-        -#           %input.form-control.disabled{:type => "email", :value => "disabled"}
-        -#         .form-group.form-inline
-        -#           %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
-        -#           .svgicon.invalid
-        -#             =partial 'images/svg-lib/ic_clear_48px.svg'
-        -#           .invalid-text Error please try again
+                %button.btn-default.mtxxxl Submit
+              .clear
+            %h4 Inline Single Row
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %label Email
+                .form-group.form-inline
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group.form-inline
+                  %button.btn-default Submit
+            %h4 Disabled
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %label Email
+                  %input.form-control.disabled{:type => "email", :placeholder => "Enter email", :disabled => ""}
+                .form-group
+                  %button.btn-default.disabled{:disabled => ""} Submit
+            %h4 Large
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-lg
+                  %label Large
+                  %input.form-control{:type => "text", :placeholder => "Larger"}
+                .form-group.form-lg
+                  %button.btn-default.btn-lg Large Btn
+            %h4 Select
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-select
+                  %select.form-control
+                    %option Pivotal
+                    %option Google
+                    %option Yahoo
+                    %option Microsoft-Linkedin
+                  .svgicon
+                    =partial 'images/svg-lib/select_arrows.svg'
+            %h4 Search
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-search
+                  %input{:type => "search", :placeholder => "Search..."}
+                  .svgicon
+                    =partial 'images/svg-lib/search.svg'
+            %h4 Text Area
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %textarea{:placeholder => "Type body here..."}
+            %h4 Radio/Checkbox
+            .section-format.mbxl.pbl
+              %form
+                .form-group
+                  %input{:type => "checkbox"}
+                  Remember Me
+                .form-group
+                  %input{:type => "radio"}
+                  Don't Remember me
+            %h4 Error/Acceptance States
+            %p Click on the red "x" in the error state to clear the form field and rest the error.
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-inline
+                  %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
+                  .svgicon.invalid
+                    =partial 'images/svg-lib/close.svg'
+                  .invalid-text Error please try again
+                .form-group.form-inline
+                  %input.valid{:type => "text", :placeholder => "Enter text", :value => "Right Answer"}
+                  .svgicon.valid
+                    =partial 'images/svg-lib/check_circle.svg'
+                .form-group.form-inline
+                  %input.loader{:type => "text", :placeholder => "Enter text", :value => "Hold up..."}
+                  .svgicon.loading
+                    =partial 'images/loading/spinner-sm.svg'
+            %h4 Simple Forms
+            %p Iron out simple use case.
+            .section-format.mbxl.pbl
+              %form.simple-form
+                .form-group.form-inline
+                  %input.form-control{:type => "email", :placeholder => "Enter email"}
+                .form-group.form-inline
+                  %input.form-control.disabled{:type => "email", :value => "disabled"}
+                .form-group.form-inline
+                  %input.invalid{:type => "text", :placeholder => "Enter text", :value => "Wrong Answer"}
+                  .svgicon.invalid
+                    =partial 'images/svg-lib/close.svg'
+                  .invalid-text Error please try again
         %section#icons
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Icons
@@ -357,6 +359,33 @@ title: 8pt Foundation Styleguide
               View 
               %a{:href => "http://pivotalicons.cfapps.io/", :target => "_blank"} 
                 Pivotal SVG Icon Library
+            .row.mvxl
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/select_arrows.svg'
+                .sg-icon-label
+                  select_arrows
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/chevron_up.svg'
+                .sg-icon-label
+                  chevron_up
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/chevron_down.svg'
+                .sg-icon-label
+                  chevron_down
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/open_in_new.svg'
+                .sg-icon-label
+                  open_in_new
+              .sg-icon-tile
+                .svgicon
+                  =partial 'images/svg-lib/add.svg'
+                .sg-icon-label
+                  add
+                
         %section#loading-spinners
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Loading Spinners
