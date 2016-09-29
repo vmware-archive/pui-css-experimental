@@ -9,7 +9,8 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
-select {
+select,
+.dropdown {
     display: block;
     width:100%;
     height: ($spacing-base*4);
@@ -55,7 +56,8 @@ input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
-select:focus {
+select:focus
+.dropdown:focus {
     border: 1px solid $input-border-focus;
     outline: 0;
 }

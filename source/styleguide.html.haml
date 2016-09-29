@@ -21,6 +21,9 @@ title: 8pt Foundation Styleguide
             %a.hover-underline{:href => "#inputs"} Inputs
           %li
             %a.hover-underline{:href => "#icons"} Icons
+          %li
+            %a.hover-underline{:href => "#loading-spinners"} Spinners
+
           
     .row.sg-content.no-gutter
       .col-md-24
@@ -301,6 +304,14 @@ title: 8pt Foundation Styleguide
                     %option Microsoft-Linkedin
                   .svgicon
                     =partial 'images/svg-lib/select_arrows.svg'
+            %h4 Dropdown
+            .section-format.mbxl.pbl
+              %form
+                .form-group.form-group-select
+                  .dropdown.form-control
+                    Drop to the down
+                  .svgicon
+                    =partial 'images/svg-lib/chevron_down.svg'
             %h4 Search
             .section-format.mbxl.pbl
               %form
@@ -388,7 +399,7 @@ title: 8pt Foundation Styleguide
                 
         %section#loading-spinners
           .section-content.margin-auto.paxl.mdl-color--white
-            %h2.section-header Loading Spinners
+            %h2.section-header Spinners
             .section-format.mbxl
               .row.no-gutter.mvxl
                 .col-sm-8.txt-c
