@@ -22,7 +22,13 @@ $sg-rim-high:#fff;
     padding-left:256px;
 }
 
-
+//Styleguide Grid Box
+.sg-box {
+    background-color: $dark-9;
+    width: 100%;
+    border-radius: 2px;
+    padding: $spacing-base;
+}
 
 
 .index .sg {

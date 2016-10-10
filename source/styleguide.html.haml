@@ -20,6 +20,8 @@ title: 8pt Foundation Styleguide
           %li
             %a.hover-underline{:href => "#inputs"} Inputs
           %li
+            %a.hover-underline{:href => "#grids"} Grid
+          %li
             %a.hover-underline{:href => "#icons"} Icons
           %li
             %a.hover-underline{:href => "#loading-spinners"} Spinners
@@ -363,6 +365,186 @@ title: 8pt Foundation Styleguide
                   .svgicon.invalid
                     =partial 'images/svg-lib/close.svg'
                   .invalid-text Error please try again
+        %section#grids
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Flexbox Grid 
+            .grid.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column  
+            %h4 Gutters
+            %p 
+              Adding 
+              %code .grid-nogutters
+              onto the 
+              %code .grid
+              element will remove negative margins and remove internal padding to every
+              %code .col
+              inside of it.
+            .grid.grid-nogutter.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col
+                .sg-box
+                  Column   
+            %h4 Vertical Alignments
+            %p
+              Adding the following modifier classes to the 
+              %code .col
+              will allow you to change vertical alignment
+            .grid.mvxl
+              .col.col-top
+                .sg-box
+                  %code .col-top
+              .col.col-center
+                .sg-box
+                  %code .col-center
+              .col
+                .sg-box
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet.
+              .col.col-bottom
+                .sg-box
+                  %code .col-bottom
+            %h4 Percent Based Column Widths
+            %p
+              Adding a column number modifier class to the column like
+              %code .col.col-4
+              to get the percentage of 4/24 columns. Additional columns without modifier classes will be auto scaled.
+            .grid.mvxl
+              .col.col-12
+                .sg-box
+                  50% with 
+                  %code .col-12
+
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+            .grid.mvxl
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+              .col.col-4
+                .sg-box 
+                  %code .col-4
+            %h4 Offset Columns
+            %p
+              Adding a column number offset modifier class to the column like
+              %code .col.col-offset-4
+              to get the percentage of 4/24 column offset.
+            .grid.mvxl
+              .col
+                .sg-box
+                  Auto
+
+              .col.col-offset-4
+                .sg-box
+                  Auto + Offset 4 columns to left
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
+            %h4 Multi Media Break Columns
+            %p Mix all the cols 
+            .grid.grid-lg.grid-md.mvxl
+              .col.col-md
+                .sg-box
+                  %code .col-md 
+              .col.col-md
+                .sg-box
+                  %code .col-md
+              .col.col-md.col-lg
+                .sg-box
+                  %code .col-md.col-lg
+              .col.col-md.col-lg
+                .sg-box
+                  %code .col-md.col-lg 
+            %h4 Small Media Break
+            %p 
+              Add the small grid break modifier class
+              %code .grid.grid-sm
+              and add the column modifier class to the desired columns
+              %code .col.col-sm
+            .grid.grid-sm.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-sm
+                .sg-box
+                  %code .col-sm
+              .col.col-sm
+                .sg-box
+                  %code .col-sm 
+            %h4 Medium Media Break
+            %p 
+              Add the medium grid break modifier class
+              %code .grid.grid-md
+              and add the column modifier class to the desired columns
+              %code .col.col-md
+            .grid.grid-md.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-md
+                .sg-box
+                  %code .col-md
+              .col.col-md
+                .sg-box
+                  %code .col-md
+            %h4 Large Media Break
+            %p 
+              Add the large grid break modifier class
+              %code .grid.grid-lg
+              and add the column modifier class to the desired columns
+              %code .col.col-lg
+            .grid.grid-lg.mvxl
+              .col
+                .sg-box
+                  Column 
+              .col
+                .sg-box
+                  Column
+              .col.col-lg
+                .sg-box
+                  %code .col-lg
+              .col.col-lg
+                .sg-box
+                  %code .col-lg 
         %section#icons
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Icons
