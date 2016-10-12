@@ -418,25 +418,28 @@
 //Media Queries
 //////////////////
 @media only screen and (max-width: 480px) {
-    .grid-sm {
+    // .grid-sm {
         .col-sm {
             flex: 100%;
+            max-width: 100%;
         }
-    }
+    // }
 }
 
 @media only screen and (max-width: 620px) {
-    .grid-md {
+    // .grid-md {
         .col-md {
             flex: 100%;
+            max-width: 100%;
         }
-    }
+    // }
 }
 
 @media only screen and (max-width: 750px) {
-    .grid-lg {
+    // .grid-lg {
         .col-lg {
             flex: 100%;
+            max-width: 100%;
         }
-    }
+    // }
 }

@@ -695,7 +695,7 @@ title: PUI Experimental
               %code .grid-nogutter
               on the grid rows. Examples of top and bottom cell alignment, row hovers, and colspans.
             .table.box-shadow-key-1
-              .th.grid.grid-nogutter
+              .th.grid
                 .td.col.col-2
                   Header 1
                 .td.col.col-2
@@ -706,7 +706,7 @@ title: PUI Experimental
                   Header 4
                 .td.col.col-8
                   Header 5
-              .tr.grid.grid-nogutter
+              .tr.grid
                 .td.col.col-2
                   %div Cell 1
                   %div Cell 1.2
@@ -720,7 +720,7 @@ title: PUI Experimental
                   Cell 4 .col-bottom
                 .td.col.col-8
                   Cell 5
-              .tr.grid.grid-nogutter
+              .tr.grid
                 .td.col.col-2
                   Cell 1
                 .td.col.col-2
@@ -735,31 +735,65 @@ title: PUI Experimental
               
             %h4 Table Borders and Hovers
             %p 
-              This table has now box-shadow or hovers. The 
+              This table has no box-shadow or hovers. The 
               %code .no-hover 
               class can be applied to the entire table or a specific row.
             .table.no-hover
-              .th.row.no-gutter
-                .td.col-xs-2
+              .th.grid
+                .td.col.col-4
                   Header 1
-                .td.col-xs-2
+                .td.col.col-2
                   Header 2
-                .td.col-xs-4
+                .td.col.col-4
                   Header 3
-                .td.col-xs-8
+                .td.col.col-6
                   Header 4
-                .td.col-xs-8
+                .td.col.col-8
                   Header 5
-              .tr.row.no-gutter
-                .td.col-xs-2
-                  Cell 1
-                .td.col-xs-2
+              .tr.grid
+                .td.col.col-4
+                  %code table.no-hover
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
-                  Cell 3 
-                .td.col-xs-8
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
                   Cell 4
-                .td.col-xs-8
+                .td.col.col-8
+                  Cell 5
+            .table
+              .th.grid
+                .td.col.col-4
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-6
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid.no-hover
+                .td.col.col-4
+                  %code .tr.no-hover
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+              .tr.grid
+                .td.col.col-4
+                  %code .tr
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3
+                .td.col.col-6
+                  Cell 4
+                .td.col.col-8
                   Cell 5
             %p 
               No side borders to cells using class 
@@ -771,38 +805,38 @@ title: PUI Experimental
               or
               %code .th
             .table.tr-no-h-borders
-              .th.row.no-gutter
-                .td.col-xs-2
+              .th.grid
+                .td.col.col-2
                   Header 1
-                .td.col-xs-2
+                .td.col.col-2
                   Header 2
-                .td.col-xs-4
+                .td.col.col-4
                   Header 3
-                .td.col-xs-8
+                .td.col.col-8
                   Header 4
-                .td.col-xs-8
+                .td.col.col-8
                   Header 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
+                .td.col.col-4
                   Cell 3 
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 4
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 5
               .tr.row.no-gutter
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
+                .td.col.col-4
                   Cell 3 
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 4
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 5
             %p 
               No borders on anything. Individual cell highlights. Add
@@ -810,68 +844,69 @@ title: PUI Experimental
               to
               %code .table
             .table.table-no-borders.td-hover
-              .th.row.no-gutter
-                .td.col-xs-2
+              .th.grid
+                .td.col.col-2
                   Header 1
-                .td.col-xs-2
+                .td.col.col-2
                   Header 2
-                .td.col-xs-4
+                .td.col.col-4
                   Header 3
-                .td.col-xs-8
+                .td.col.col-8
                   Header 4
-                .td.col-xs-8
+                .td.col.col-8
                   Header 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
+                .td.col.col-4
                   Cell 3 
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 4
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
+                .td.col.col-4
                   Cell 3 
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 4
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 5
             %h4 Table Linking
             %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
             .table
-              .th.row.no-gutter
-                .td.col-xs-2
+              .th.grid
+                .td.col.col-2
                   Header 1
-                .td.col-xs-2
+                .td.col.col-2
                   Header 2
-                .td.col-xs-4
+                .td.col.col-4
                   Header 3
-                .td.col-xs-8
+                .td.col.col-8
                   Header 4
-                .td.col-xs-8
+                .td.col.col-8
                   Header 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   Cell 2
-                .td.col-xs-4
+                .td.col.col-4
                   Cell 3 
-                .td.col-xs-8
+                .td.col.col-8
                   Cell 4
-                %a.td.col-xs-8{:href => "#tables", :title => "Everyone Can Read It"}
+                %a.td.col.col-8{:href => "#tables", :title => "Everyone Can Read It"}
                   Cell 5
-              %a.tr.row.no-gutter{:href => "#tables", :title => "Everyone Can Read It"}
+              %a.tr.grid{:href => "#tables", :title => "Everyone Can Read It"}
                 
-                .td.col-xs-24
+                .td.col.col-24
                   Cell 24
+            
             %h4 Table Breaks
             %p 
               Large Column breaks (750px) Collapse Rows add
@@ -879,27 +914,27 @@ title: PUI Experimental
               to the 
               %code .table
             .table.table-lg-row
-              .tr.row.no-gutter
-                .td.col-lg-2
+              .tr.grid
+                .td.col.col-lg.col-2
                   Cell 1
-                .td.col-lg-2
+                .td.col.col-lg.col-2
                   Cell 2
-                .td.col-lg-4
+                .td.col.col-lg.col-4
                   Cell 3 
-                .td.col-lg-8
+                .td.col.col-lg.col-8
                   Cell 4
-                .td.col-lg-8
+                .td.col.col-lg.col-8
                   Cell 5
-              .tr.row.no-gutter
-                .td.col-lg-2
+              .tr.grid
+                .td.col.col-lg.col-2
                   Cell 1
-                .td.col-lg-2
+                .td.col.col-lg.col-2
                   Cell 2
-                .td.col-lg-4
+                .td.col.col-lg.col-4
                   Cell 3 
-                .td.col-lg-8
+                .td.col.col-lg.col-8
                   Cell 4
-                .td.col-lg-8
+                .td.col.col-lg.col-8
                   Cell 5
             %p 
               Medium Column breaks (620px) Collapse Rows add 
@@ -907,27 +942,27 @@ title: PUI Experimental
               to the 
               %code .table
             .table.table-md-row
-              .tr.row.no-gutter
-                .td.col-md-2
+              .tr.grid
+                .td.col.col-md.col-2
                   Cell 1
-                .td.col-md-2
+                .td.col.col-md.col-2
                   Cell 2
-                .td.col-md-4
+                .td.col.col-md.col-4
                   Cell 3 
-                .td.col-md-8
+                .td.col.col-md.col-8
                   Cell 4
-                .td.col-md-8
+                .td.col.col-md.col-8
                   Cell 5
-              .tr.row.no-gutter
-                .td.col-md-2
+              .tr.grid
+                .td.col.col-md.col-2
                   Cell 1
-                .td.col-md-2
+                .td.col.col-md.col-2
                   Cell 2
-                .td.col-md-4
+                .td.col.col-md.col-4
                   Cell 3 
-                .td.col-md-8
+                .td.col.col-md.col-8
                   Cell 4
-                .td.col-md-8
+                .td.col.col-md.col-8
                   Cell 5
             %p
               Small Column breaks (480px) Collapse Rows add 
@@ -935,27 +970,27 @@ title: PUI Experimental
               to the 
               %code .table
             .table.table-sm-row
-              .tr.row.no-gutter
-                .td.col-sm-2
+              .tr.grid
+                .td.col.col-sm.col-2
                   Cell 1
-                .td.col-sm-2
+                .td.col.col-sm.col-2
                   Cell 2
-                .td.col-sm-4
+                .td.col.col-sm.col-4
                   Cell 3 
-                .td.col-sm-8
+                .td.col.col-sm.col-8
                   Cell 4
-                .td.col-sm-8
+                .td.col.col-sm.col-8
                   Cell 5
-              .tr.row.no-gutter
-                .td.col-sm-2
+              .tr.grid
+                .td.col.col-sm.col-2
                   Cell 1
-                .td.col-sm-2
+                .td.col.col-sm.col-2
                   Cell 2
-                .td.col-sm-4
+                .td.col.col-sm.col-4
                   Cell 3 
-                .td.col-sm-8
+                .td.col.col-sm.col-8
                   Cell 4
-                .td.col-sm-8
+                .td.col.col-sm.col-8
                   Cell 5
            
 

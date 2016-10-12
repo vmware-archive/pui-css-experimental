@@ -2,6 +2,9 @@
 .table {
     background-color: $table-bg;
     margin-bottom: ($spacing-base*2);
+    .grid {
+        margin:0;
+    }
     //Table Row Header
     .th {
         font-size: $table-header-font-size;
