@@ -1,13 +1,13 @@
 
 .table {
-    background-color: transparent;
+    background-color: $table-bg;
     margin-bottom: ($spacing-base*2);
     //Table Row Header
     .th {
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $dark-6;
+        font-size: $table-header-font-size;
+        font-weight: $table-header-font-weight;
+        text-transform: $table-header-text-transform;
+        color: $table-header-color;
         .td {
             border-bottom: solid 1px $table-border-color;
         }
@@ -32,13 +32,15 @@
             }
         }
         &:hover {
-            background-color: $dark-10;
+            background-color: $table-bg-hover;
         }
         &.no-hover {
-            background-color: transparent;
+            background-color: $table-bg;
         }
     }
     //Table Cell
+    
+
     .td {
         border-left: solid 1px $table-border-color;
         border-top: solid 1px $table-border-color;
@@ -51,17 +53,20 @@
             border-right: solid 1px $table-border-color;
         }
     }
+    .td.col {
+       padding: $spacing-base; 
+    }
     &.no-hover {
         .tr:hover {
-            background-color: transparent;
+            background-color: $table-bg;
         }
     }
     &.td-hover {
         .tr:hover {
-            background-color: transparent;
+            background-color: $table-bg;
         }
         .tr .td:hover {
-            background-color: $dark-10;
+            background-color: $table-bg-hover;
         }
     }
     //No cell borders in row
@@ -103,7 +108,7 @@
         @media only screen and (max-width: 480px) {
             .tr {
                 &:hover {
-                    background-color: transparent;
+                    background-color: $table-bg;
                 }
                 &:last-child .td {
                     border-bottom: none;
@@ -113,7 +118,7 @@
                 }
             }
             .tr .td:hover {
-                background-color: $dark-10;
+                background-color: $table-bg-hover;
             }
             .td {
                 border-left: solid 1px $table-border-color;
@@ -125,7 +130,7 @@
         @media only screen and (max-width: 620px) {
             .tr {
                 &:hover {
-                    background-color: transparent;
+                    background-color: $table-bg;
                 }
                 &:last-child .td {
                     border-bottom: none;
@@ -135,7 +140,7 @@
                 }
             }
             .tr .td:hover {
-                background-color: $dark-10;
+                background-color: $table-bg-hover;
             }
             .td {
                 border-left: solid 1px $table-border-color;
@@ -147,7 +152,7 @@
         @media only screen and (max-width: 750px) {
             .tr {
                 &:hover {
-                    background-color: transparent;
+                    background-color: $table-bg;
                 }
                 &:last-child .td {
                     border-bottom: none;
@@ -157,7 +162,7 @@
                 }
             }
             .tr .td:hover {
-                background-color: $dark-10;
+                background-color: $table-bg-hover;
             }
             .td {
                 border-left: solid 1px $table-border-color;

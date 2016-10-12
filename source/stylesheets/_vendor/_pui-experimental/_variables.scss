@@ -262,6 +262,44 @@ $font-size-title:         42px;
 
 
 
+// Tables
+// -------------------------
+// table fonts and colors
+$table-header-color: $dark-6;
+$table-header-font-size: 12px;
+$table-header-font-weight: 700;
+$table-header-text-transform: uppercase;
+
+// table spacing and bgs
+$table-cell-padding:                 8px;
+// $table-condensed-cell-padding:       5px !default;
+
+$table-bg:                           transparent !default; // overall background-color
+$table-bg-accent:                    $dark-10; // for striping
+$table-bg-hover:                     $dark-11;
+$table-bg-active:                    $table-bg-hover !default;
+
+$table-border-color:                 $dark-9; // table and cell border
+
+// $table-standard-header-bg:           $neutral-3;
+// $table-standard-border-color:        $neutral-9;
+
+
+
+// Table Scrollable
+
+$table-scrollable-lg:            900px;
+$table-scrollable-md:            600px;
+$table-scrollable-sm:            300px;
+$table-scrollable-default-height:183px;
+
+$table-scrollable-border:        1px solid $neutral-8;
+$table-scrollable-header-border: 2px solid $neutral-8;
+$table-scrollable-body-border:   3px solid $neutral-9;
+
+
+
+
 /////////////////////////
 //EXPERIMENTAL
 ////////////////////////
@@ -303,7 +341,7 @@ $svg-size: 100px;
 $offset: 430;
 $duration: 2s;
 //Tables
-$table-border-color:$dark-10;
+// $table-border-color:$dark-10;
 
 // $table-border-color:rgba(0, 0, 0, .16);
 //Box Shadows

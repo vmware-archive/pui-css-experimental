@@ -380,7 +380,7 @@ title: PUI Experimental
               .col
                 .sg-box
                   Column  
-            %h4 Gutters
+            %h4 No Gutters
             %p 
               Adding 
               %code .grid-nogutters
@@ -403,20 +403,123 @@ title: PUI Experimental
             %p
               Adding the following modifier classes to the 
               %code .col
-              will allow you to change vertical alignment
+              will allow you to change vertical alignment of the column itself
             .grid.mvxl
-              .col.col-top
+              .col.col-align-top
                 .sg-box
-                  %code .col-top
-              .col.col-center
+                  %code .col-align-top
+              .col.col-align-middle
                 .sg-box
-                  %code .col-center
+                  %code .col-align-middle
               .col
                 .sg-box
                   Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet.
-              .col.col-bottom
+              .col.col-align-bottom
                 .sg-box
-                  %code .col-bottom
+                  %code .col-align-bottom
+            %h4 Horizontal Alignments
+            %p
+              Adding the following modifiers to change influence where columns will collect inside of the grid.
+            .grid.grid-start
+              .col.col-12
+                .sg-box
+                  %code .grid-start .col
+            .grid.grid-center
+              .col.col-12
+                .sg-box
+                  %code .grid-center .col
+                  
+            .grid.grid-end
+              .col.col-12
+                .sg-box
+                  %code .grid-end .col
+              
+            %h4 Distribution
+            %p
+              Adding the following modifiers to the
+              %code .grid
+              will change the distribution of defined width columns.
+            .grid.grid-around
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-around .col.col-5
+            .grid.grid-between
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+              .col.col-5
+                .sg-box
+                  %code .grid-between .col.col-5
+                  
+            %h4 Ordering
+            %p
+              Adding 
+              %code .col-first
+              or
+              %code .col-last
+              to a 
+              %code .col
+              will reorder the selected column.
+              Modifying 
+              %code .grid.grid-reverse
+              will reverse the order of the columns inside of the grid.
+            .grid
+              .col
+                .sg-box
+                  1
+              .col
+                .sg-box
+                  2
+              .col
+                .sg-box
+                  3
+              .col.col-first
+                .sg-box
+                  4
+                  %code .col-first
+            .grid
+              .col.col-last
+                .sg-box
+                  1
+                  %code .col-last
+              .col
+                .sg-box
+                  2
+              .col
+                .sg-box
+                  3
+              .col
+                .sg-box
+                  4
+            .grid.grid-reverse
+              .col
+                .sg-box
+                  1
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  2
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  3
+                  %code .grid-reverse .col
+              .col
+                .sg-box
+                  4
+                  %code .grid-reverse .col
+                  
+              
+            
             %h4 Percent Based Column Widths
             %p
               Adding a column number modifier class to the column like
@@ -502,7 +605,7 @@ title: PUI Experimental
                   Auto
               .col
                 .sg-box
-                  .grid
+                  .grid.mbn
                     .col
                       .sg-box.bg-dark-8
                         Child Col
@@ -589,45 +692,47 @@ title: PUI Experimental
               This table has 
               %code .box-shadow-key-1
               and
-              %code .no-gutter
-              on the rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+              %code .grid-nogutter
+              on the grid rows. Examples of top and bottom cell alignment, row hovers, and colspans.
             .table.box-shadow-key-1
-              .th.row.no-gutter
-                .td.col-xs-2
+              .th.grid.grid-nogutter
+                .td.col.col-2
                   Header 1
-                .td.col-xs-2
+                .td.col.col-2
                   Header 2
-                .td.col-xs-4
+                .td.col.col-4
                   Header 3
-                .td.col-xs-8
+                .td.col.col-8
                   Header 4
-                .td.col-xs-8
+                .td.col.col-8
                   Header 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid.grid-nogutter
+                .td.col.col-2
                   %div Cell 1
                   %div Cell 1.2
-                .td.col-xs-2
+                .td.col.col-2
                   %div Cell 2
                   %div Cell 2.1
                   %div Cell 2.2
-                .td.col-xs-4.vert-top
-                  Cell 3 (.vert-top)
-                .td.col-xs-8.vert-bottom
-                  Cell 4 (.vert-bottom)
-                .td.col-xs-8
+                .td.col.col-4.col-top
+                  Cell 3 .col-top
+                .td.col.col-8.col-bottom
+                  Cell 4 .col-bottom
+                .td.col.col-8
                   Cell 5
-              .tr.row.no-gutter
-                .td.col-xs-2
+              .tr.grid.grid-nogutter
+                .td.col.col-2
                   Cell 1
-                .td.col-xs-2
+                .td.col.col-2
                   %div Cell 2
                   %div Cell 2.2
-                .td.col-xs-4
+                .td.col.col-4
                   .type-ellipsis
                     Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
-                .td.col-xs-16
-                  Cell 4 + 5
+                .td.col
+                  Cell 4 + 5 (auto width)
+
+              
             %h4 Table Borders and Hovers
             %p 
               This table has now box-shadow or hovers. The 

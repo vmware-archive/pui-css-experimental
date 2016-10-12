@@ -46,14 +46,34 @@
 ////////////////////////
 //Column Modifiers
 ////////////////////////
+//Column Align Classes
+
+//This could be .flex-self-top, better describes what it is
+.col-align-top {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.col-align-bottom {
+    align-self: flex-end;
+}
+
+.col-align-middle {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+//Column Content Justify Classes
+//This could be .flex-justify-content-top, better?
+//Needs to be clear that this goes on the .col generally
 .col-top {
     // -webkit-align-items: flex-start;
     // -ms-flex-align: start;
     // -webkit-box-align: start;
     // align-items: flex-start;
-    -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    justify-content: flex-start !important;
 }
 
 .col-bottom {
@@ -61,18 +81,66 @@
     // -ms-flex-align: end;
     // -webkit-box-align: end;
     // align-items: flex-end;
-    align-self: flex-end;
+    justify-content: flex-end !important;
 }
 
-.col-center {
+.col-middle {
     // -webkit-justify-content: center;
     // -ms-flex-pack: center;
     // -webkit-box-pack: center;
     // justify-content: center;
     // text-align: center;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    justify-content: center;
+}
+
+//Horizontal Grid Alignment
+.grid-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.grid-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.grid-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+//Grid Distribution 
+.grid-around {
+    justify-content: space-around;
+}
+
+.grid-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+//Reordering Columns
+.col-first {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+.col-last {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.grid-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 //Fixed Column Modifier Class

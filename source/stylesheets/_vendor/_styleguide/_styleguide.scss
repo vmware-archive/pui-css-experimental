@@ -1,25 +1,32 @@
 //Styleguide
 //---------------------------------------------
 $sg-rim-high:#fff;
-
-
 .styleguide {
     .styleguide-header {
-        color:$accent-3;
+        color: $accent-3;
     }
-    
+}
+
+@media only screen and (max-width: 900px) {
+    .sg-sidenav {
+        display: none;
+    }
+    .sg-content {
+        padding-left: 0 !important;
+    }
 }
 
 .sg-sidenav {
     z-index: 1;
-    position:fixed;
-    top:0;
-    left:0;
-    width:240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
     height: 100vh;
 }
+
 .sg-content {
-    padding-left:256px;
+    padding-left: 256px;
 }
 
 //Styleguide Grid Box
@@ -30,12 +37,10 @@ $sg-rim-high:#fff;
     padding: $spacing-base;
 }
 
-
 .index .sg {
     animation: sg-bg-gradients 8s infinite linear;
     background-color: $accent-3;
     .sg-rim {
-
         position: absolute;
         top: 0;
         margin: 16px;
@@ -50,11 +55,11 @@ $sg-rim-high:#fff;
         width: 8px;
         height: calc(100% + 16px);
         // background-color: red;
-        overflow:hidden;
+        overflow: hidden;
         &:after {
             content: "";
             position: absolute;
-            left:0;
+            left: 0;
             width: 8px;
             height: calc(100% + 16px);
             background-color: $sg-rim-high;
@@ -68,7 +73,7 @@ $sg-rim-high:#fff;
         width: 8px;
         height: calc(100% + 16px);
         // background-color: red;
-        overflow:hidden;
+        overflow: hidden;
         &:after {
             content: "";
             position: absolute;
@@ -87,11 +92,11 @@ $sg-rim-high:#fff;
         width: calc(100% + 16px);
         height: 8px;
         // background-color: green;
-        overflow:hidden;
+        overflow: hidden;
         &:after {
             content: "";
             position: absolute;
-            left:0;
+            left: 0;
             width: calc(100% + 16px);
             height: 8px;
             background-color: $sg-rim-high;
@@ -105,11 +110,11 @@ $sg-rim-high:#fff;
         width: calc(100% + 16px);
         height: 8px;
         // background-color: green;
-        overflow:hidden;
+        overflow: hidden;
         &:after {
             content: "";
             position: absolute;
-            right:0;
+            right: 0;
             width: calc(100% + 16px);
             height: 8px;
             background-color: $sg-rim-high;
@@ -118,83 +123,76 @@ $sg-rim-high:#fff;
     }
 }
 
-
-
 @keyframes rim-left {
-	0% {
-		top:calc(100% + 16px);
-	}
-	50% {
-		top:calc(-100% - 16px);
-	}
-	
-	100% {
-		top:calc(-100% - 16px);
-	}
-}
-@keyframes rim-top{
-	0% {
-		left:calc(-100% - 16px);
-	}
-	25% {
-		left:calc(-100% - 16px);
-		
-	}
-	75% {
-		left:calc(100% + 16px);
-	}
-	100% {
-		left:calc(100% + 16px);
-	}
+    0% {
+        top: calc(100% + 16px);
+    }
+    50% {
+        top: calc(-100% - 16px);
+    }
+    100% {
+        top: calc(-100% - 16px);
+    }
 }
 
-@keyframes rim-right{
-	0% {
-		top:calc(-100% - 16px);
-	}
-	50% {
-		top:calc(-100% - 16px);
-	}
-	100% {
-		top:calc(100% + 16px);
-	}
-}
-@keyframes rim-bottom{
-	0% {
-		left:calc(-100% - 16px);
-	}
-	25% {
-		left:calc(-100% - 16px);
-		
-	}
-	75% {
-		left:calc(100% + 16px);
-	}
-	100% {
-		left:calc(100% + 16px);
-	}
+@keyframes rim-top {
+    0% {
+        left: calc(-100% - 16px);
+    }
+    25% {
+        left: calc(-100% - 16px);
+    }
+    75% {
+        left: calc(100% + 16px);
+    }
+    100% {
+        left: calc(100% + 16px);
+    }
 }
 
+@keyframes rim-right {
+    0% {
+        top: calc(-100% - 16px);
+    }
+    50% {
+        top: calc(-100% - 16px);
+    }
+    100% {
+        top: calc(100% + 16px);
+    }
+}
 
+@keyframes rim-bottom {
+    0% {
+        left: calc(-100% - 16px);
+    }
+    25% {
+        left: calc(-100% - 16px);
+    }
+    75% {
+        left: calc(100% + 16px);
+    }
+    100% {
+        left: calc(100% + 16px);
+    }
+}
 
-@keyframes rim-bottom{
-	0% {
-		right:0;
-	}
-
-	25% {
-		right:calc(100% + 16px);
-		
-	}
-	74.9999% {
-		right:calc(100% + 16px);
-	}
-	75% {
-		right:calc(-100% - 16px);
-	}
-	100% {
-		right:0;
-	}
+@keyframes rim-bottom {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: calc(100% + 16px);
+    }
+    74.9999% {
+        right: calc(100% + 16px);
+    }
+    75% {
+        right: calc(-100% - 16px);
+    }
+    100% {
+        right: 0;
+    }
 }
 
 @keyframes sg-bg-gradients {

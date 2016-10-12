@@ -1,18 +1,18 @@
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-// code {
-//     padding: 2px 4px;
-//     margin: 0 2px;
-//     font-size: 90%;
-//     white-space: nowrap;
-//     background: $grey-100;
-//     border: 1px solid $grey-200;
-//     border-radius: 2px;
-// }
+code {
+    padding: 2px 4px;
+    margin: 0 2px;
+    font-size: 90%;
+    white-space: nowrap;
+    background: $dark-11;
+    border: 1px solid $dark-9;
+    border-radius: 2px;
+}
 
-// pre > code {
-//     display: block;
-//     padding: 1rem 1.5rem;
-//     white-space: pre;
-// }
+pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+}
