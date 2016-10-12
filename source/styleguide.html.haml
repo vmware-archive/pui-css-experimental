@@ -1,5 +1,5 @@
 ---
-title: 8pt Foundation Styleguide
+title: PUI Experimental
 ---
 //this
 
@@ -21,6 +21,8 @@ title: 8pt Foundation Styleguide
             %a.hover-underline{:href => "#inputs"} Inputs
           %li
             %a.hover-underline{:href => "#grids"} Grid
+          %li
+            %a.hover-underline{:href => "#tables"} Tables
           %li
             %a.hover-underline{:href => "#icons"} Icons
           %li
@@ -442,18 +444,34 @@ title: 8pt Foundation Styleguide
               .col.col-4
                 .sg-box 
                   %code .col-4
+              .col.col-8
+                .sg-box 
+                  %code .col-8
+              
               .col.col-4
                 .sg-box 
                   %code .col-4
               .col.col-4
                 .sg-box 
                   %code .col-4
-              .col.col-4
-                .sg-box 
-                  %code .col-4
-              .col.col-4
-                .sg-box 
-                  %code .col-4
+            %h4 Fixed Width Columns
+            %p
+              Adding 
+              %code .col-fixed
+              to your 
+              %code .col
+              will allow you to style a fixed width.
+            .grid.mvxl
+              .col.col-fixed{:style => "width:175px;"}
+                .sg-box
+                  Fixed 175px
+                
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  Auto
             %h4 Offset Columns
             %p
               Adding a column number offset modifier class to the column like
@@ -473,6 +491,25 @@ title: 8pt Foundation Styleguide
               .col
                 .sg-box
                   Auto
+            %h4 Nested Columns
+            %p
+              Nested columns shown below have objects inside of them that have their own paddings. If you need to adjust columns you can use 
+              %code .grid-nogutter
+              or whitespacing classes.
+            .grid.mvxl
+              .col
+                .sg-box
+                  Auto
+              .col
+                .sg-box
+                  .grid
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
+                    .col
+                      .sg-box.bg-dark-8
+                        Child Col
+            
             %h4 Multi Media Break Columns
             %p Mix all the cols 
             .grid.grid-lg.grid-md.mvxl
@@ -545,6 +582,278 @@ title: 8pt Foundation Styleguide
               .col.col-lg
                 .sg-box
                   %code .col-lg 
+        %section#tables
+          .section-content.margin-auto.paxl.mdl-color--white
+            %h2.section-header Tables
+            %p 
+              This table has 
+              %code .box-shadow-key-1
+              and
+              %code .no-gutter
+              on the rows. Examples of top and bottom cell alignment, row hovers, and colspans.
+            .table.box-shadow-key-1
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  %div Cell 1
+                  %div Cell 1.2
+                .td.col-xs-2
+                  %div Cell 2
+                  %div Cell 2.1
+                  %div Cell 2.2
+                .td.col-xs-4.vert-top
+                  Cell 3 (.vert-top)
+                .td.col-xs-8.vert-bottom
+                  Cell 4 (.vert-bottom)
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  %div Cell 2
+                  %div Cell 2.2
+                .td.col-xs-4
+                  .type-ellipsis
+                    Ellipsis-example-HotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlineblingHotlinebling
+                .td.col-xs-16
+                  Cell 4 + 5
+            %h4 Table Borders and Hovers
+            %p 
+              This table has now box-shadow or hovers. The 
+              %code .no-hover 
+              class can be applied to the entire table or a specific row.
+            .table.no-hover
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %p 
+              No side borders to cells using class 
+              %code .tr-no-h-borders 
+              on the 
+              %code .tr 
+              or
+              %code .table
+              or
+              %code .th
+            .table.tr-no-h-borders
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %p 
+              No borders on anything. Individual cell highlights. Add
+              %code .td-hover
+              to
+              %code .table
+            .table.table-no-borders.td-hover
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                .td.col-xs-8
+                  Cell 5
+            %h4 Table Linking
+            %p Row A tags and cell A tags. Apply the proper classes directly to the A tag. 
+            .table
+              .th.row.no-gutter
+                .td.col-xs-2
+                  Header 1
+                .td.col-xs-2
+                  Header 2
+                .td.col-xs-4
+                  Header 3
+                .td.col-xs-8
+                  Header 4
+                .td.col-xs-8
+                  Header 5
+              .tr.row.no-gutter
+                .td.col-xs-2
+                  Cell 1
+                .td.col-xs-2
+                  Cell 2
+                .td.col-xs-4
+                  Cell 3 
+                .td.col-xs-8
+                  Cell 4
+                %a.td.col-xs-8{:href => "#tables", :title => "Everyone Can Read It"}
+                  Cell 5
+              %a.tr.row.no-gutter{:href => "#tables", :title => "Everyone Can Read It"}
+                
+                .td.col-xs-24
+                  Cell 24
+            %h4 Table Breaks
+            %p 
+              Large Column breaks (750px) Collapse Rows add
+              %code .table-lg-row 
+              to the 
+              %code .table
+            .table.table-lg-row
+              .tr.row.no-gutter
+                .td.col-lg-2
+                  Cell 1
+                .td.col-lg-2
+                  Cell 2
+                .td.col-lg-4
+                  Cell 3 
+                .td.col-lg-8
+                  Cell 4
+                .td.col-lg-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-lg-2
+                  Cell 1
+                .td.col-lg-2
+                  Cell 2
+                .td.col-lg-4
+                  Cell 3 
+                .td.col-lg-8
+                  Cell 4
+                .td.col-lg-8
+                  Cell 5
+            %p 
+              Medium Column breaks (620px) Collapse Rows add 
+              %code .table-md-row 
+              to the 
+              %code .table
+            .table.table-md-row
+              .tr.row.no-gutter
+                .td.col-md-2
+                  Cell 1
+                .td.col-md-2
+                  Cell 2
+                .td.col-md-4
+                  Cell 3 
+                .td.col-md-8
+                  Cell 4
+                .td.col-md-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-md-2
+                  Cell 1
+                .td.col-md-2
+                  Cell 2
+                .td.col-md-4
+                  Cell 3 
+                .td.col-md-8
+                  Cell 4
+                .td.col-md-8
+                  Cell 5
+            %p
+              Small Column breaks (480px) Collapse Rows add 
+              %code .table-sm-row 
+              to the 
+              %code .table
+            .table.table-sm-row
+              .tr.row.no-gutter
+                .td.col-sm-2
+                  Cell 1
+                .td.col-sm-2
+                  Cell 2
+                .td.col-sm-4
+                  Cell 3 
+                .td.col-sm-8
+                  Cell 4
+                .td.col-sm-8
+                  Cell 5
+              .tr.row.no-gutter
+                .td.col-sm-2
+                  Cell 1
+                .td.col-sm-2
+                  Cell 2
+                .td.col-sm-4
+                  Cell 3 
+                .td.col-sm-8
+                  Cell 4
+                .td.col-sm-8
+                  Cell 5
+           
+
         %section#icons
           .section-content.margin-auto.paxl.mdl-color--white
             %h2.section-header Icons

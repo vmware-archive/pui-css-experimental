@@ -1,5 +1,3 @@
-
-
 //New Flexbox Grid
 .grid {
     box-sizing: border-box;
@@ -19,7 +17,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 (-1*$spacing-base) 0 (-1*$spacing-base);
+    margin: 0 (-1*$spacing-base) ($spacing-base*2) (-1*$spacing-base);
     //Use this to remove spacing
     &.grid-nogutter {
         margin: 0;
@@ -75,6 +73,11 @@
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
+}
+
+//Fixed Column Modifier Class
+.col-fixed {
+    flex: initial;
 }
 
 /////////////////////////
@@ -247,10 +250,10 @@
     flex-basis: 100%;
     max-width: 100%;
 }
+
 //////////////////
 //Column Offsets
 /////////////////
-
 .col-offset-1 {
     margin-left: 4.16667%;
 }
@@ -349,7 +352,7 @@
 @media only screen and (max-width: 480px) {
     .grid-sm {
         .col-sm {
-            flex:100%;
+            flex: 100%;
         }
     }
 }
@@ -357,7 +360,7 @@
 @media only screen and (max-width: 620px) {
     .grid-md {
         .col-md {
-            flex:100%;
+            flex: 100%;
         }
     }
 }
@@ -365,7 +368,7 @@
 @media only screen and (max-width: 750px) {
     .grid-lg {
         .col-lg {
-            flex:100%;
+            flex: 100%;
         }
     }
 }
