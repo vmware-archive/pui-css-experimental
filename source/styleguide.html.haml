@@ -460,18 +460,18 @@ title: PUI Experimental
               %code .col-fixed
               to your 
               %code .col
-              will allow you to style a fixed width.
+              will allow you to style a fixed width. When used with % based width columns they will still derive their width from the total grid width. 
             .grid.mvxl
               .col.col-fixed{:style => "width:175px;"}
                 .sg-box
                   Fixed 175px
-                
               .col
                 .sg-box
                   Auto
-              .col
+              .col.col-12
                 .sg-box
-                  Auto
+                  %code .col-12
+              
             %h4 Offset Columns
             %p
               Adding a column number offset modifier class to the column like
