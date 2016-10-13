@@ -25,7 +25,6 @@
     }
     //Table Row
     .tr {
-        
         &:last-child .td {
             border-bottom: solid 1px $table-border-color;
             &:first-child {
@@ -52,8 +51,8 @@
         //Vert-middle
         display: flex;
         flex-direction: column;
-
         justify-content: center;
+        
 
         // flex-direction: row;
         
