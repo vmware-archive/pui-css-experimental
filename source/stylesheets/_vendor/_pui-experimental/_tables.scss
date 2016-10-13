@@ -72,6 +72,7 @@
             background-color: $table-bg-hover;
         }
     }
+    
     //No cell borders in row
     .tr.tr-no-h-borders {
         .td {
@@ -96,6 +97,19 @@
             border-left: none;
             &:first-child {
                 border-left: solid 1px $table-border-color;
+            }
+        }
+    }
+    //No External borders to a table
+    &.tr-no-ext-borders .tr, &.tr-no-ext-borders .th, .tr.tr-no-ext-borders, .th.tr-no-ext-borders {
+        .td {
+            &:first-child {
+                border-left:none;
+                border-radius:0;
+            }
+            &:last-child {
+                border-right:none;
+                border-radius:0;
             }
         }
     }

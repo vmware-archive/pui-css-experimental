@@ -827,7 +827,39 @@ title: PUI Experimental
                   Cell 4
                 .td.col.col-8
                   Cell 5
-              .tr.row.no-gutter
+              .tr.grid
+                .td.col.col-2
+                  Cell 1
+                .td.col.col-2
+                  Cell 2
+                .td.col.col-4
+                  Cell 3 
+                .td.col.col-8
+                  Cell 4
+                .td.col.col-8
+                  Cell 5
+            %p 
+              No external borders to cells using class 
+              %code .tr-no-ext-borders 
+              on the 
+              %code .tr 
+              or
+              %code .table
+              or
+              %code .th
+            .table.tr-no-ext-borders
+              .th.grid
+                .td.col.col-2
+                  Header 1
+                .td.col.col-2
+                  Header 2
+                .td.col.col-4
+                  Header 3
+                .td.col.col-8
+                  Header 4
+                .td.col.col-8
+                  Header 5
+              .tr.grid.tr-no-h-borders
                 .td.col.col-2
                   Cell 1
                 .td.col.col-2
